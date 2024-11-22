@@ -1,20 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://b67wsv8dhn334"]
+[gd_scene load_steps=5 format=3 uid="uid://b67wsv8dhn334"]
 
-[ext_resource type="Script" path="res://levels/poziom.gd" id="1_f08sj"]
-[ext_resource type="Texture2D" uid="uid://wsbgyneaun5k" path="res://textures/ufolud/ufolud.jpg" id="1_m5ikt"]
+[ext_resource type="Texture2D" uid="uid://cfnbjvm4c1dn8" path="res://textures/temp/terrain/blok.png" id="2_0fa5u"]
 [ext_resource type="PackedScene" uid="uid://cunqde6kl3dvy" path="res://levels/player.tscn" id="2_y7e0g"]
 
-[node name="Poziom" type="Node2D"]
-script = ExtResource("1_f08sj")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6r8ub"]
+texture = ExtResource("2_0fa5u")
+0:0/0 = 0
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[sub_resource type="TileSet" id="TileSet_tjt13"]
+sources/0 = SubResource("TileSetAtlasSource_6r8ub")
 
-[node name="Ufolud" type="Sprite2D" parent="."]
-visible = false
-scale = Vector2(2.161, 2)
-texture = ExtResource("1_m5ikt")
+[node name="Main" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("2_y7e0g")]
-position = Vector2(-566, -339)
+position = Vector2(514, 342)
 
-[node name="Start" type="Marker2D" parent="."]
+[node name="Level" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_tjt13")
+format = 2
