@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wsbgyneaun5k"
-path="res://.godot/imported/ufolud.jpg-d92b15183314125523ea0867d8bb2c7f.ctex"
+uid="uid://ddnuodb74ivxa"
+path="res://.godot/imported/main_sprite.png-04f00d02485dd8e9fe1e84cb916fd128.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/ufolud.jpg"
-dest_files=["res://.godot/imported/ufolud.jpg-d92b15183314125523ea0867d8bb2c7f.ctex"]
+source_file="res://Scripts/Main_Character/main_sprite.png"
+dest_files=["res://.godot/imported/main_sprite.png-04f00d02485dd8e9fe1e84cb916fd128.ctex"]
 
 [params]
 
