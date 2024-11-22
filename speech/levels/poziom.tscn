@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b67wsv8dhn334"]
+
+[ext_resource type="Texture2D" uid="uid://wsbgyneaun5k" path="res://textures/ufolud.jpg" id="1_m5ikt"]
+
+[node name="Poziom" type="Node2D"]
+
+[node name="Ufolud" type="Sprite2D" parent="."]
+position = Vector2(565, 316)
+scale = Vector2(2.17181, 2.01031)
+texture = ExtResource("1_m5ikt")
