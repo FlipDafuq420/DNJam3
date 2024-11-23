@@ -4,6 +4,7 @@ extends StaticBody2D
 @export var gravity = 100
 var reachable = false
 var locked = false
+var near_insert = false
 var locked_source
 var interact_source
 var velocity = Vector2(Vector2.ZERO)
@@ -25,7 +26,7 @@ func _input(event):
 	if event.get_action_strength("Interact") and reachable and !locked and interact_source != null:
 		locked = true
 		locked_source = interact_source
-	elif event.get_action_strength("Interact") and locked:
+	elif event.get_action_strength("Interact") and locked and !near_insert:
 		locked = false;
 		locked_source = null
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://drfj305ml7e46"]
+[gd_scene load_steps=18 format=4 uid="uid://b67wsv8dhn334"]
 
 [ext_resource type="Script" path="res://levels/debug_level.gd" id="1_shkfm"]
 [ext_resource type="PackedScene" uid="uid://cc2yqfumenit7" path="res://objects/zmiana_poziomu.tscn" id="2_51upq"]
@@ -10,12 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://o331xqy8751c" path="res://Grafiki/Bloki/Piasek.png" id="7_svsgg"]
 [ext_resource type="PackedScene" uid="uid://dtkly4ehyjfiq" path="res://objects/tabliczka.tscn" id="8_trfbn"]
 [ext_resource type="Script" path="res://levels/death.gd" id="9_8n24c"]
-
-[sub_resource type="Curve2D" id="Curve2D_m5gwo"]
-_data = {
-"points": PackedVector2Array(0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 20, -180)
-}
-point_count = 2
+[ext_resource type="PackedScene" uid="uid://c474lnid0jpna" path="res://objects/Wtyczka.tscn" id="11_24fh0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qdnwr"]
 texture = ExtResource("6_crpos")
@@ -130,6 +125,12 @@ sources/1 = SubResource("TileSetAtlasSource_8xkbq")
 sources/0 = SubResource("TileSetAtlasSource_qdnwr")
 sources/2 = SubResource("TileSetAtlasSource_1dwtd")
 
+[sub_resource type="Curve2D" id="Curve2D_m5gwo"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 20, -180)
+}
+point_count = 2
+
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8fc75"]
 
 [node name="Main" type="Node2D"]
@@ -139,39 +140,44 @@ script = ExtResource("1_shkfm")
 position = Vector2(190, 140)
 next_level = "res://levels/poziom.tscn"
 
+[node name="Wtyczka" parent="." instance=ExtResource("11_24fh0")]
+position = Vector2(260, 140)
+
+[node name="Tabliczka" parent="." instance=ExtResource("8_trfbn")]
+position = Vector2(462, 254)
+tablet_type = "slonce"
+
 [node name="Player" parent="." instance=ExtResource("3_eqm3r")]
 unique_name_in_owner = true
 position = Vector2(140, 260)
 
-[node name="Kolce" parent="." instance=ExtResource("4_1w1if")]
+[node name="Kolce" type="Node2D" parent="."]
+
+[node name="Kolce" parent="Kolce" instance=ExtResource("4_1w1if")]
 position = Vector2(330, 280)
 
-[node name="Kolce2" parent="." instance=ExtResource("4_1w1if")]
+[node name="Kolce2" parent="Kolce" instance=ExtResource("4_1w1if")]
 position = Vector2(370, 280)
 
-[node name="Kolce3" parent="." instance=ExtResource("4_1w1if")]
+[node name="Kolce3" parent="Kolce" instance=ExtResource("4_1w1if")]
 position = Vector2(350, 280)
-
-[node name="Platforma" parent="." instance=ExtResource("5_sgrvb")]
-position = Vector2(390, 290)
-curve = SubResource("Curve2D_m5gwo")
-loop = false
-speed_scale = 0.6
 
 [node name="Level" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_xyrvk")
 rendering_quadrant_size = 20
 format = 2
 
+[node name="Platforma" parent="Level" instance=ExtResource("5_sgrvb")]
+position = Vector2(390, 290)
+curve = SubResource("Curve2D_m5gwo")
+loop = false
+speed_scale = 0.6
+
 [node name="Piaskowiec" type="TileMapLayer" parent="Level"]
 use_parent_material = true
 tile_map_data = PackedByteArray("AAACAAsAAQADAAAAAAACAAwAAQAAAAEAAAACAA0AAQAAAAEAAAACAA4AAQAAAAEAAAADAAwAAAACAAAAAAADAA0AAAABAAEAAAADAA4AAAABAAEAAAAEAA0AAAABAAAAAAAEAA4AAQABAAEAAAAFAA0AAQACAAAAAAAFAA4AAQABAAEAAAAGAA4AAAABAAAAAAAHAA4AAAABAAAAAAAIAA4AAAABAAAAAAAJAA4AAQABAAAAAAAPAA4AAQAAAAAAAAAQAA4AAQABAAAAAAARAA4AAQABAAAAAAASAA4AAQABAAAAAAATAA4AAAABAAAAAAAUAA4AAAABAAAAAAAVAA4AAAABAAAAAAAWAA4AAAABAAAAAAAXAA4AAQABAAAAAAAYAA4AAQACAAAAAAAIAAgAAQAAAAMAAAAJAAgAAQABAAMAAAAKAAgAAQABAAMAAAALAAgAAQABAAMAAAAMAAgAAQABAAMAAAANAAgAAQABAAMAAAAOAAgAAQABAAMAAAAPAAgAAQABAAMAAAAQAAgAAQACAAMAAAACAA8AAQAAAAEAAAACABAAAQAAAAIAAAADABAAAQABAAIAAAAEABAAAQABAAIAAAAFAA8AAQABAAEAAAAFABAAAQABAAIAAAAGAA8AAQABAAEAAAAGABAAAQABAAIAAAAHAA8AAAABAAEAAAAHABAAAQABAAIAAAAIAA8AAQABAAEAAAAIABAAAQABAAIAAAAJAA8AAQABAAEAAAAJABAAAQABAAIAAAAPAA8AAQAAAAEAAAAPABAAAQAAAAIAAAAQAA8AAQABAAEAAAAQABAAAQABAAIAAAARAA8AAAABAAEAAAARABAAAQABAAIAAAASAA8AAQABAAEAAAASABAAAQABAAIAAAATAA8AAQABAAEAAAATABAAAQABAAIAAAAUAA8AAAABAAEAAAAUABAAAQABAAIAAAAVAA8AAAABAAEAAAAVABAAAAABAAIAAAAWAA8AAAABAAEAAAAWABAAAQABAAIAAAAXAA8AAQABAAEAAAAXABAAAQABAAIAAAAYAA8AAQACAAEAAAAYABAAAQACAAIAAAAMAA4AAgABAAAAAAAMAA8AAgABAAEAAAAMABAAAgABAAIAAAANAA4AAgABAAAAAAANAA8AAgABAAEAAAANABAAAgABAAIAAAAOAA4AAgACAAAAAAAOAA8AAgACAAEAAAAOABAAAgACAAIAAAALAA4AAgAAAAAAAAALAA8AAgAAAAEAAAALABAAAgAAAAIAAAAKAA4AAQACAAAAAAAKAA8AAQACAAEAAAAKABAAAQACAAIAAAADAA8AAAABAAEAAAAEAA8AAQABAAEAAAA=")
 tile_set = SubResource("TileSet_xyrvk")
 rendering_quadrant_size = 20
-
-[node name="Tabliczka" parent="." instance=ExtResource("8_trfbn")]
-position = Vector2(462, 254)
-tablet_type = "slonce"
 
 [node name="death" type="Area2D" parent="."]
 script = ExtResource("9_8n24c")
