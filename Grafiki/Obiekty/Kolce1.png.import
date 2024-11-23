@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxokmm3r402ju"
-path="res://.godot/imported/Image16.png-0d37b8dc37544132b3fb10b985d18571.ctex"
+uid="uid://b8vr3lovtwchr"
+path="res://.godot/imported/Kolce1.png-2d00f79a0055d3d72f383403375bf895.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Grafiki/Henryk/Henryk Ruch Lewo/Image16.png"
-dest_files=["res://.godot/imported/Image16.png-0d37b8dc37544132b3fb10b985d18571.ctex"]
+source_file="res://Grafiki/Obiekty/Kolce1.png"
+dest_files=["res://.godot/imported/Kolce1.png-2d00f79a0055d3d72f383403375bf895.ctex"]
 
 [params]
 

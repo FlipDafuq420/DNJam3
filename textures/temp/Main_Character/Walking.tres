@@ -1,21 +1,24 @@
-[gd_resource type="SpriteFrames" load_steps=24 format=3 uid="uid://deuve1itsup8g"]
+[gd_resource type="SpriteFrames" load_steps=29 format=3 uid="uid://deuve1itsup8g"]
 
 [ext_resource type="Texture2D" uid="uid://dwtfeuksnhif6" path="res://Grafiki/Henryk/Henryk Lewo.png" id="1_2uukg"]
 [ext_resource type="Texture2D" uid="uid://bhcj2057my5mm" path="res://Grafiki/Henryk/Henryk.png" id="1_k27gy"]
 [ext_resource type="Texture2D" uid="uid://okoq7wib6dtf" path="res://Grafiki/Henryk/Henryk Prawo.png" id="1_v1ixb"]
-[ext_resource type="Texture2D" uid="uid://2xwsfowh6rrt" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Image11.png" id="2_y2qjs"]
-[ext_resource type="Texture2D" uid="uid://c5gxeu6nakg4h" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Image12.png" id="3_iffq7"]
-[ext_resource type="Texture2D" uid="uid://ke7cvxhbervk" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Image13.png" id="4_chnah"]
-[ext_resource type="Texture2D" uid="uid://bsslbudjah6hj" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Image14.png" id="5_64sf7"]
-[ext_resource type="Texture2D" uid="uid://cerfygrehhugu" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Image15.png" id="6_7w5sm"]
-[ext_resource type="Texture2D" uid="uid://bxokmm3r402ju" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Image16.png" id="7_qfkhd"]
-[ext_resource type="Texture2D" uid="uid://d01nhlit0p5uc" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Image17.png" id="8_i84hv"]
-[ext_resource type="Texture2D" uid="uid://bj5llk3teetc4" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Image18.png" id="9_xtspr"]
-[ext_resource type="Texture2D" uid="uid://bi1r6tbn6xlxg" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Image19.png" id="10_dok5b"]
-[ext_resource type="Texture2D" uid="uid://cfr4m64a7ljqb" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Image110.png" id="11_8o3mi"]
+[ext_resource type="Texture2D" uid="uid://baoiwckq47sos" path="res://Grafiki/Henryk/Henryk Skok.png" id="3_m5y5y"]
+[ext_resource type="Texture2D" uid="uid://n2skci3ylfur" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo1.png" id="4_svc44"]
+[ext_resource type="Texture2D" uid="uid://b1fmbldvsokox" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo2.png" id="5_nqq7q"]
+[ext_resource type="Texture2D" uid="uid://un5wrdpfbxyn" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo3.png" id="6_1b86e"]
+[ext_resource type="Texture2D" uid="uid://bij3h446vu3m7" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo4.png" id="7_w6ppt"]
+[ext_resource type="Texture2D" uid="uid://cq3whs6o6w76y" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo5.png" id="8_e5oao"]
+[ext_resource type="Texture2D" uid="uid://blqsylotqm8u7" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo6.png" id="9_58kjx"]
+[ext_resource type="Texture2D" uid="uid://0ig47tutebtg" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo7.png" id="10_hs3l1"]
+[ext_resource type="Texture2D" uid="uid://35bgrngcar5g" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo8.png" id="11_udipo"]
 [ext_resource type="Texture2D" uid="uid://mhq0xxjtp8y2" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo1.png" id="12_h03k5"]
+[ext_resource type="Texture2D" uid="uid://bqbc0gmpqjxxe" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo9.png" id="12_va2jd"]
+[ext_resource type="Texture2D" uid="uid://k8qnw6u8ar8i" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo10.png" id="13_1ewii"]
 [ext_resource type="Texture2D" uid="uid://b2ft2s0imbb5y" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo2.png" id="13_h5y1b"]
 [ext_resource type="Texture2D" uid="uid://b74h26abwrfur" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo3.png" id="14_42ok2"]
+[ext_resource type="Texture2D" uid="uid://c13rrb40aev60" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo11.png" id="14_qkt55"]
+[ext_resource type="Texture2D" uid="uid://bkppkl2m3p5k1" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo12.png" id="15_h1ol4"]
 [ext_resource type="Texture2D" uid="uid://mq5dkukk5us" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo4.png" id="15_ovu01"]
 [ext_resource type="Texture2D" uid="uid://ba0tmvslo3f3p" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo5.png" id="16_tprhs"]
 [ext_resource type="Texture2D" uid="uid://dveplwx06yom7" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo6.png" id="17_dhnci"]
@@ -23,6 +26,8 @@
 [ext_resource type="Texture2D" uid="uid://wfe6f731kc6t" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo8.png" id="19_ji2gr"]
 [ext_resource type="Texture2D" uid="uid://bvni3rwgbtr1a" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo9.png" id="20_6nhw4"]
 [ext_resource type="Texture2D" uid="uid://b3a2boj4ui7un" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo10.png" id="21_t8c7g"]
+[ext_resource type="Texture2D" uid="uid://dqvpd2lpk1grc" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo11.png" id="26_f3276"]
+[ext_resource type="Texture2D" uid="uid://bxlmt8qnvu50d" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo12.png" id="27_hmcds"]
 
 [resource]
 animations = [{
@@ -44,34 +49,48 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("2_y2qjs")
+"texture": ExtResource("3_m5y5y")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_svc44")
 }, {
 "duration": 1.0,
-"texture": ExtResource("3_iffq7")
+"texture": ExtResource("5_nqq7q")
 }, {
 "duration": 1.0,
-"texture": ExtResource("4_chnah")
+"texture": ExtResource("6_1b86e")
 }, {
 "duration": 1.0,
-"texture": ExtResource("5_64sf7")
+"texture": ExtResource("7_w6ppt")
 }, {
 "duration": 1.0,
-"texture": ExtResource("6_7w5sm")
+"texture": ExtResource("8_e5oao")
 }, {
 "duration": 1.0,
-"texture": ExtResource("7_qfkhd")
+"texture": ExtResource("9_58kjx")
 }, {
 "duration": 1.0,
-"texture": ExtResource("8_i84hv")
+"texture": ExtResource("10_hs3l1")
 }, {
 "duration": 1.0,
-"texture": ExtResource("9_xtspr")
+"texture": ExtResource("11_udipo")
 }, {
 "duration": 1.0,
-"texture": ExtResource("10_dok5b")
+"texture": ExtResource("12_va2jd")
 }, {
 "duration": 1.0,
-"texture": ExtResource("11_8o3mi")
+"texture": ExtResource("13_1ewii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_qkt55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_h1ol4")
 }],
 "loop": true,
 "name": &"Walk_Left",
@@ -107,6 +126,12 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": ExtResource("21_t8c7g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_f3276")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_hmcds")
 }],
 "loop": true,
 "name": &"Walk_Right",

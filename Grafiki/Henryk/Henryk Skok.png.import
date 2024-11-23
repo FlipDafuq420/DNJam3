@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d01nhlit0p5uc"
-path="res://.godot/imported/Image17.png-ff066b7603d75304f3aa1ea0ab03837f.ctex"
+uid="uid://baoiwckq47sos"
+path="res://.godot/imported/Henryk Skok.png-cb60fc3fe80d0d53a501380a71d5e1b6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Grafiki/Henryk/Henryk Ruch Lewo/Image17.png"
-dest_files=["res://.godot/imported/Image17.png-ff066b7603d75304f3aa1ea0ab03837f.ctex"]
+source_file="res://Grafiki/Henryk/Henryk Skok.png"
+dest_files=["res://.godot/imported/Henryk Skok.png-cb60fc3fe80d0d53a501380a71d5e1b6.ctex"]
 
 [params]
 

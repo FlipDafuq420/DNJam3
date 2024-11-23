@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2xwsfowh6rrt"
-path="res://.godot/imported/Image11.png-61386a993dba1c0699de665302b5396b.ctex"
+uid="uid://tg7vkpv3heaj"
+path="res://.godot/imported/Piaskowiec1.png-01bf8f8bca975a149944ad8a6041af20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Grafiki/Henryk/Henryk Ruch Lewo/Image11.png"
-dest_files=["res://.godot/imported/Image11.png-61386a993dba1c0699de665302b5396b.ctex"]
+source_file="res://Grafiki/Bloki/Piaskowiec1.png"
+dest_files=["res://.godot/imported/Piaskowiec1.png-01bf8f8bca975a149944ad8a6041af20.ctex"]
 
 [params]
 

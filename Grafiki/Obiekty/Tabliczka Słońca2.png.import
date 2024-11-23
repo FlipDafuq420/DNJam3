@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bi1r6tbn6xlxg"
-path="res://.godot/imported/Image19.png-690c8a86b72035c2039eddf4d9e7e55f.ctex"
+uid="uid://cr0gn1hftgou3"
+path="res://.godot/imported/Tabliczka Słońca2.png-61bb4824029b2019780e94855104556e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Grafiki/Henryk/Henryk Ruch Lewo/Image19.png"
-dest_files=["res://.godot/imported/Image19.png-690c8a86b72035c2039eddf4d9e7e55f.ctex"]
+source_file="res://Grafiki/Obiekty/Tabliczka Słońca2.png"
+dest_files=["res://.godot/imported/Tabliczka Słońca2.png-61bb4824029b2019780e94855104556e.ctex"]
 
 [params]
 
