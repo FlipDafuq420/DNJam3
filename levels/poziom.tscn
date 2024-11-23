@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=4 uid="uid://b67wsv8dhn334"]
+[gd_scene load_steps=6 format=4 uid="uid://b67wsv8dhn334"]
 
 [ext_resource type="Texture2D" uid="uid://b62sl7v7nyrtu" path="res://textures/place_holder_tiles_set.png" id="2_cmhk4"]
 [ext_resource type="PackedScene" uid="uid://cunqde6kl3dvy" path="res://levels/player.tscn" id="2_y7e0g"]
+[ext_resource type="PackedScene" uid="uid://dx65kwrdluap2" path="res://levels/tabliczka.tscn" id="3_1ueas"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wkifu"]
 texture = ExtResource("2_cmhk4")
@@ -31,10 +32,6 @@ texture_region_size = Vector2i(20, 20)
 8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
 9:2/0 = 0
 9:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
-10:2/0 = 0
-11:2/0 = 0
-10:3/0 = 0
-11:3/0 = 0
 5:1/0 = 0
 5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
 5:2/0 = 0
@@ -50,7 +47,8 @@ sources/0 = SubResource("TileSetAtlasSource_wkifu")
 [node name="Main" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("2_y7e0g")]
-position = Vector2(490, 365)
+unique_name_in_owner = true
+position = Vector2(137, 257)
 
 [node name="Level" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_xyrvk")
@@ -59,6 +57,9 @@ format = 2
 
 [node name="Layer1" type="TileMapLayer" parent="Level"]
 use_parent_material = true
-tile_map_data = PackedByteArray("AAAVABMAAAACAAIAAAAWABMAAAACAAIAAAAXABMAAAACAAIAAAAYABMAAAAIAAIAAAAZABMAAAAIAAIAAAAaABMAAAAIAAIAAAAbABMAAAAIAAIAAAAcABMAAAAIAAIAAAAdABMAAAAIAAIAAAAeABMAAAAIAAIAAAAfABMAAAAIAAIAAAAgABMAAAAIAAIAAAAhABMAAAAIAAIAAAAiABMAAAAIAAIAAAAjABMAAAAIAAIAAAAkABMAAAAIAAIAAAAlABMAAAAIAAIAAAAmABMAAAAIAAIAAAAnABMAAAAIAAIAAAAoABMAAAAIAAIAAAApABMAAAAIAAIAAAAUABMAAAABAAIAAAAqABMAAAAJAAIAAAAVABIAAAACAAEAAAAUABIAAAABAAEAAAAUABEAAAABAAEAAAAWABIAAAACAAAAAAAVABEAAAADAAAAAAAUABAAAAAFAAEAAAAXABIAAAADAAAAAAAaABEAAAAHAAIAAAAbABEAAAAIAAIAAAAcABEAAAAJAAIAAAA=")
+tile_map_data = PackedByteArray("AAACAAsAAAAFAAEAAAACAAwAAAABAAEAAAACAA0AAAABAAEAAAACAA4AAAABAAIAAAADAAwAAAADAAAAAAADAA0AAAACAAEAAAADAA4AAAACAAIAAAAEAA0AAAACAAAAAAAEAA4AAAACAAIAAAAFAA0AAAADAAAAAAAFAA4AAAACAAIAAAAGAA4AAAAIAAIAAAAHAA4AAAAIAAIAAAAIAAwAAAAHAAIAAAAIAA4AAAAIAAIAAAAJAAwAAAAIAAIAAAAJAA4AAAAIAAIAAAAKAAwAAAAJAAIAAAAKAA4AAAAIAAIAAAALAA4AAAAIAAIAAAAMAA4AAAAIAAIAAAANAA4AAAAIAAIAAAAOAA4AAAAIAAIAAAAPAA4AAAAIAAIAAAAQAA4AAAAIAAIAAAARAA4AAAAIAAIAAAASAA4AAAAIAAIAAAATAA4AAAAIAAIAAAAUAA4AAAAIAAIAAAAVAA4AAAAIAAIAAAAWAA4AAAAIAAIAAAAXAA4AAAAIAAIAAAAYAA4AAAAJAAIAAAA=")
 tile_set = SubResource("TileSet_xyrvk")
 rendering_quadrant_size = 20
+
+[node name="StaticBody2D" parent="." instance=ExtResource("3_1ueas")]
+position = Vector2(462, 254)
