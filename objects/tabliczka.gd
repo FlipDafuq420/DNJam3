@@ -2,6 +2,7 @@ extends StaticBody2D
 
 @export var tablet_type = "default"
 @export var gravity = 100
+@onready var sprite = $AnimatedSprite2D
 var reachable = false
 var locked = false
 var near_insert = false
@@ -13,13 +14,13 @@ var velocity = Vector2(Vector2.ZERO)
 func _ready() -> void:
 	match tablet_type:
 		"slonce":
-			$AnimatedSprite2D.animation = "slonce"
+			sprite.animation = "slonce"
 		"nie":
-			$AnimatedSprite2D.animation = "nie"
+			sprite.animation = "nie"
 		"ruch":
-			$AnimatedSprite2D.animation = "ruch"
+			sprite.animation = "ruch"
 		"default":
-			$AnimatedSprite2D.animation = "default"
+			sprite.animation = "default"
 	velocity.y += gravity
 
 func _input(event):

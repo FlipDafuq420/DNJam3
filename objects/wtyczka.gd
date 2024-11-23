@@ -17,14 +17,16 @@ func _process(delta: float) -> void:
 func _input(event: InputEvent) -> void:
 	if event.get_action_strength("Interact") and near_player != null and held_item != null:
 		held_item.near_insert = false
+		held_item.sprite.animation = held_item.tablet_type
 		held_item.locked = true
 		held_item.locked_source = near_player
-		held_item = null
 		taken_out()
+		held_item = null
 	if event.get_action_strength("Interact") and reachable:
 		held_item = interact_source
 		held_item.locked = true
 		held_item.locked_source = $"."
+		held_item.sprite.animation = "in_" + held_item.tablet_type
 		reachable = false
 		inserted()
 
@@ -53,9 +55,11 @@ func _on_body_exited(body: Node2D) -> void:
 	near_player = null
 	
 func inserted():
-	get_tree().current_scene.daytime = "night"
-	get_tree().current_scene.change_time()
+	if held_item.tablet_type == "slonce":
+		get_tree().current_scene.daytime = "night"
+		get_tree().current_scene.change_time()
 	
 func taken_out():
-	get_tree().current_scene.daytime = "day"
-	get_tree().current_scene.change_time()
+	if held_item.tablet_type == "slonce":
+		get_tree().current_scene.daytime = "day"
+		get_tree().current_scene.change_time()
