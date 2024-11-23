@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://cc2yqfumenit7"]
+[gd_scene load_steps=4 format=3 uid="uid://cc2yqfumenit7"]
 
 [ext_resource type="Script" path="res://objects/zmiana_poziomu.gd" id="1_betjk"]
 [ext_resource type="Texture2D" uid="uid://8ehpnxds3gll" path="res://Grafiki/Obiekty/Przejście1.png" id="2_h7te2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c761w"]
+size = Vector2(0, 30)
 
 [node name="Zmiana poziomu" type="Area2D"]
 collision_layer = 128
@@ -9,9 +12,11 @@ collision_mask = 128
 script = ExtResource("1_betjk")
 
 [node name="Przejście1" type="Sprite2D" parent="."]
-position = Vector2(0, -5)
+position = Vector2(0, -2.5)
 texture = ExtResource("2_h7te2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_c761w")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -104,7 +104,7 @@ sources/1 = SubResource("TileSetAtlasSource_pp4i4")
 script = ExtResource("1_7ryir")
 
 [node name="Zmiana poziomu" parent="." instance=ExtResource("6_62haa")]
-position = Vector2(190, 150)
+position = Vector2(190, 140)
 next_level = "res://levels/poziom.tscn"
 
 [node name="Player" parent="." instance=ExtResource("2_y7e0g")]
