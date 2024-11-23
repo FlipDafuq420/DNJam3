@@ -1,8 +1,10 @@
-[gd_scene load_steps=6 format=4 uid="uid://b67wsv8dhn334"]
+[gd_scene load_steps=9 format=4 uid="uid://b67wsv8dhn334"]
 
 [ext_resource type="Texture2D" uid="uid://b62sl7v7nyrtu" path="res://textures/place_holder_tiles_set.png" id="2_cmhk4"]
 [ext_resource type="PackedScene" uid="uid://cunqde6kl3dvy" path="res://levels/player.tscn" id="2_y7e0g"]
+[ext_resource type="Texture2D" uid="uid://ctsgg714lpkw5" path="res://Grafiki/Bloki/Piaskowiec.png" id="3_0hc5d"]
 [ext_resource type="PackedScene" uid="uid://dx65kwrdluap2" path="res://levels/tabliczka.tscn" id="3_1ueas"]
+[ext_resource type="PackedScene" uid="uid://c3kyqrvy5y77a" path="res://levels/kolce.tscn" id="5_eigfp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wkifu"]
 texture = ExtResource("2_cmhk4")
@@ -39,16 +41,60 @@ texture_region_size = Vector2i(20, 20)
 5:3/0 = 0
 5:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
 
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8xkbq"]
+texture = ExtResource("3_0hc5d")
+texture_region_size = Vector2i(20, 20)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+3:0/0 = 0
+3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+2:1/0 = 0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+3:1/0 = 0
+3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+0:2/0 = 0
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+1:2/0 = 0
+1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+2:2/0 = 0
+2:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+3:2/0 = 0
+3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+0:3/0 = 0
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+1:3/0 = 0
+1:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+2:3/0 = 0
+2:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+3:3/0 = 0
+3:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+
 [sub_resource type="TileSet" id="TileSet_xyrvk"]
 tile_size = Vector2i(20, 20)
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_wkifu")
+sources/1 = SubResource("TileSetAtlasSource_8xkbq")
 
 [node name="Main" type="Node2D"]
 
 [node name="Player" parent="." instance=ExtResource("2_y7e0g")]
 unique_name_in_owner = true
 position = Vector2(137, 257)
+collision_layer = 7
+collision_mask = 7
+
+[node name="Kolce" parent="." instance=ExtResource("5_eigfp")]
+position = Vector2(330, 281)
+collision_layer = 1
+collision_mask = 1
 
 [node name="Level" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_xyrvk")
@@ -57,9 +103,10 @@ format = 2
 
 [node name="Layer1" type="TileMapLayer" parent="Level"]
 use_parent_material = true
-tile_map_data = PackedByteArray("AAACAAsAAAAFAAEAAAACAAwAAAABAAEAAAACAA0AAAABAAEAAAACAA4AAAABAAIAAAADAAwAAAADAAAAAAADAA0AAAACAAEAAAADAA4AAAACAAIAAAAEAA0AAAACAAAAAAAEAA4AAAACAAIAAAAFAA0AAAADAAAAAAAFAA4AAAACAAIAAAAGAA4AAAAIAAIAAAAHAA4AAAAIAAIAAAAIAAwAAAAHAAIAAAAIAA4AAAAIAAIAAAAJAAwAAAAIAAIAAAAJAA4AAAAIAAIAAAAKAAwAAAAJAAIAAAAKAA4AAAAIAAIAAAALAA4AAAAIAAIAAAAMAA4AAAAIAAIAAAANAA4AAAAIAAIAAAAOAA4AAAAIAAIAAAAPAA4AAAAIAAIAAAAQAA4AAAAIAAIAAAARAA4AAAAIAAIAAAASAA4AAAAIAAIAAAATAA4AAAAIAAIAAAAUAA4AAAAIAAIAAAAVAA4AAAAIAAIAAAAWAA4AAAAIAAIAAAAXAA4AAAAIAAIAAAAYAA4AAAAJAAIAAAA=")
+tile_map_data = PackedByteArray("AAACAAsAAQADAAAAAAACAAwAAQAAAAEAAAACAA0AAQAAAAEAAAACAA4AAQAAAAEAAAADAAwAAQACAAAAAAADAA0AAQABAAEAAAADAA4AAQABAAEAAAAEAA0AAQABAAAAAAAEAA4AAQABAAEAAAAFAA0AAQACAAAAAAAFAA4AAQABAAEAAAAGAA4AAQABAAAAAAAHAA4AAQABAAAAAAAIAAwAAQAAAAMAAAAIAA4AAQABAAAAAAAJAAwAAQABAAMAAAAJAA4AAQABAAAAAAAKAAwAAQACAAMAAAAKAA4AAQABAAAAAAALAA4AAQABAAAAAAAMAA4AAQABAAAAAAANAA4AAQABAAAAAAAOAA4AAQABAAAAAAAPAA4AAQABAAAAAAAQAA4AAQABAAAAAAARAA4AAQABAAAAAAASAA4AAQABAAAAAAATAA4AAQABAAAAAAAUAA4AAQABAAAAAAAVAA4AAQABAAAAAAAWAA4AAQABAAAAAAAXAA4AAQABAAAAAAAYAA4AAQACAAAAAAAIAAgAAQABAAAAAAAJAAgAAQABAAAAAAAKAAgAAQABAAAAAAALAAgAAQABAAAAAAAMAAgAAQABAAAAAAANAAgAAQABAAAAAAAOAAgAAQABAAAAAAAPAAgAAQABAAAAAAAQAAgAAQABAAAAAAACAA8AAQAAAAEAAAACABAAAQAAAAIAAAADAA8AAQABAAEAAAADABAAAQABAAIAAAAEAA8AAQABAAEAAAAEABAAAQABAAIAAAAFAA8AAQABAAEAAAAFABAAAQABAAIAAAAGAA8AAQABAAEAAAAGABAAAQABAAIAAAAHAA8AAQABAAEAAAAHABAAAQABAAIAAAAIAA8AAQABAAEAAAAIABAAAQABAAIAAAAJAA8AAQABAAEAAAAJABAAAQABAAIAAAAKAA8AAQABAAEAAAAKABAAAQABAAIAAAALAA8AAQABAAEAAAALABAAAQABAAIAAAAMAA8AAQABAAEAAAAMABAAAQABAAIAAAANAA8AAQABAAEAAAANABAAAQABAAIAAAAOAA8AAQABAAEAAAAOABAAAQABAAIAAAAPAA8AAQABAAEAAAAPABAAAQABAAIAAAAQAA8AAQABAAEAAAAQABAAAQABAAIAAAARAA8AAQABAAEAAAARABAAAQABAAIAAAASAA8AAQABAAEAAAASABAAAQABAAIAAAATAA8AAQABAAEAAAATABAAAQABAAIAAAAUAA8AAQABAAEAAAAUABAAAQABAAIAAAAVAA8AAQABAAEAAAAVABAAAQABAAIAAAAWAA8AAQABAAEAAAAWABAAAQABAAIAAAAXAA8AAQABAAEAAAAXABAAAQABAAIAAAAYAA8AAQACAAEAAAAYABAAAQACAAIAAAA=")
 tile_set = SubResource("TileSet_xyrvk")
 rendering_quadrant_size = 20
 
-[node name="StaticBody2D" parent="." instance=ExtResource("3_1ueas")]
+[node name="Tabliczka" parent="." instance=ExtResource("3_1ueas")]
 position = Vector2(462, 254)
+tablet_type = "nie"
