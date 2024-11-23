@@ -1,0 +1,79 @@
+[gd_scene load_steps=9 format=3 uid="uid://du8lainsgvpes"]
+
+[ext_resource type="Texture2D" uid="uid://b3jlyapf4eiml" path="res://textures/start_block.png" id="1_flxcq"]
+[ext_resource type="Script" path="res://levels/static_body_2d_2.gd" id="3_b2oei"]
+[ext_resource type="Texture2D" uid="uid://uv6dvx18xlim" path="res://textures/mmenu.png" id="3_yr4ir"]
+[ext_resource type="PackedScene" uid="uid://burqjxooglj5w" path="res://levels/kostka.tscn" id="4_wbiiv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0sato"]
+size = Vector2(632, 50)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m2we5"]
+size = Vector2(14, 446)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lfsvv"]
+size = Vector2(59, 447)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p7pa8"]
+size = Vector2(60, 60)
+
+[node name="menu" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(270, 180)
+texture = ExtResource("3_yr4ir")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(271, 109)
+texture = ExtResource("1_flxcq")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
+position = Vector2(-3, 392)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(275, -11)
+shape = SubResource("RectangleShape2D_0sato")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(255, -413)
+shape = SubResource("RectangleShape2D_0sato")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-8, -207)
+shape = SubResource("RectangleShape2D_m2we5")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(572, -205)
+shape = SubResource("RectangleShape2D_lfsvv")
+
+[node name="kostka" parent="." instance=ExtResource("4_wbiiv")]
+position = Vector2(375, 179)
+
+[node name="pole" type="StaticBody2D" parent="." groups=["dropable"]]
+position = Vector2(148, 134)
+script = ExtResource("3_b2oei")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pole"]
+shape = SubResource("RectangleShape2D_p7pa8")
+
+[node name="ColorRect" type="ColorRect" parent="pole"]
+offset_left = -30.0
+offset_top = -30.0
+offset_right = 30.0
+offset_bottom = 30.0
+
+[node name="pole2" type="StaticBody2D" parent="." groups=["dropable"]]
+position = Vector2(296, 268)
+script = ExtResource("3_b2oei")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pole2"]
+shape = SubResource("RectangleShape2D_p7pa8")
+
+[node name="ColorRect" type="ColorRect" parent="pole2"]
+offset_left = -30.0
+offset_top = -30.0
+offset_right = 30.0
+offset_bottom = 30.0
