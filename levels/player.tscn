@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cunqde6kl3dvy"]
+[gd_scene load_steps=4 format=3 uid="uid://418nh7pidq8k"]
 
 [ext_resource type="Script" path="res://levels/player.gd" id="1_al6bl"]
 [ext_resource type="SpriteFrames" uid="uid://deuve1itsup8g" path="res://textures/temp/Main_Character/Walking.tres" id="1_clf27"]

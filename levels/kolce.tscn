@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cf4npahou7jkp"]
+[gd_scene load_steps=4 format=3 uid="uid://dpcmpwxkcu8gl"]
 
 [ext_resource type="Texture2D" uid="uid://cfnbjvm4c1dn8" path="res://textures/temp/terrain/blok.png" id="1_he5ed"]
 [ext_resource type="Script" path="res://levels/kolce.gd" id="1_o8j2a"]
