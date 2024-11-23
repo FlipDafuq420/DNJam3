@@ -9,9 +9,9 @@
 
 [sub_resource type="Curve2D" id="Curve2D_m5gwo"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 160, 0, 0, 0, 0, 0, 240, -60)
+"points": PackedVector2Array(0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 130, 30, 0, 0, 0, 0, 190, 30, 0, 0, 0, 0, 280, -90)
 }
-point_count = 4
+point_count = 5
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8xkbq"]
 texture = ExtResource("3_0hc5d")
@@ -85,5 +85,5 @@ position = Vector2(462, 254)
 tablet_type = "nie"
 
 [node name="Zmiana poziomu" parent="." instance=ExtResource("6_62haa")]
-position = Vector2(230, 150)
+position = Vector2(190, 150)
 next_level = "res://levels/poziom.tscn"

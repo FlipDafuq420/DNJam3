@@ -6,9 +6,6 @@ extends CharacterBody2D
 var face = "default"
 var moving = false
 
-func _ready() -> void:
-	$AnimatedSprite2D.autoplay
-
 func _physics_process(delta: float):
 	
 	velocity.y += gravity * delta

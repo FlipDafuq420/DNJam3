@@ -31,4 +31,4 @@ func _on_timer_timeout() -> void:
 
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	body.kill()
+	body.call_deferred("kill")
