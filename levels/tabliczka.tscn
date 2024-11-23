@@ -1,13 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://dtkly4ehyjfiq"]
+[gd_scene load_steps=11 format=3 uid="uid://dtkly4ehyjfiq"]
 
 [ext_resource type="Texture2D" uid="uid://wsbgyneaun5k" path="res://textures/ufolud/ufolud.jpg" id="1_fpcio"]
 [ext_resource type="Script" path="res://levels/tabliczka.gd" id="1_qfwwy"]
-[ext_resource type="Texture2D" uid="uid://widmlan2qvpc" path="res://Grafiki/Obiekty/Tabliczka Nie1.png" id="3_bcdjw"]
-[ext_resource type="Texture2D" uid="uid://dodexlbnyq4fb" path="res://Grafiki/Obiekty/Tabliczka Nie2.png" id="4_cguji"]
-[ext_resource type="Texture2D" uid="uid://b57mqwjw7l3ft" path="res://Grafiki/Obiekty/Tabliczka Ruchu1.png" id="5_so1d8"]
-[ext_resource type="Texture2D" uid="uid://costos5fr247p" path="res://Grafiki/Obiekty/Tabliczka Ruchu2.png" id="6_7dc5h"]
-[ext_resource type="Texture2D" uid="uid://c3eejdh0i2k6h" path="res://Grafiki/Obiekty/Tabliczka Słońca1.png" id="7_yn5i8"]
-[ext_resource type="Texture2D" uid="uid://cr0gn1hftgou3" path="res://Grafiki/Obiekty/Tabliczka Słońca2.png" id="8_7swac"]
+[ext_resource type="Texture2D" uid="uid://c6ohtxd66pd8r" path="res://Grafiki/Obiekty/Tabliczka Nie1.png" id="3_bcdjw"]
+[ext_resource type="Texture2D" uid="uid://cxwuqkdnsbuis" path="res://Grafiki/Obiekty/Tabliczka Nie2.png" id="4_cguji"]
+[ext_resource type="Texture2D" uid="uid://07c3526pndx8" path="res://Grafiki/Obiekty/Tabliczka Ruchu1.png" id="5_so1d8"]
+[ext_resource type="Texture2D" uid="uid://cqira37togass" path="res://Grafiki/Obiekty/Tabliczka Ruchu2.png" id="6_7dc5h"]
+[ext_resource type="Texture2D" uid="uid://dl41js343qowj" path="res://Grafiki/Obiekty/Tabliczka Słońca1.png" id="7_yn5i8"]
+[ext_resource type="Texture2D" uid="uid://q63labqxt0d0" path="res://Grafiki/Obiekty/Tabliczka Słońca2.png" id="8_7swac"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cq1vp"]
 animations = [{
