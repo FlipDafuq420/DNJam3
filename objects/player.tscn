@@ -21,3 +21,6 @@ sprite_frames = ExtResource("1_clf27")
 animation = &"Walk_Right"
 autoplay = "default"
 frame_progress = 0.0650125
+
+[node name="HoldPoint" type="Marker2D" parent="."]
+position = Vector2(-1, -25)
