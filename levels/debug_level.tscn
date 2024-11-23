@@ -1,23 +1,23 @@
 [gd_scene load_steps=16 format=4 uid="uid://b67wsv8dhn334"]
 
-[ext_resource type="Script" path="res://levels/poziom.gd" id="1_7ryir"]
-[ext_resource type="PackedScene" uid="uid://418nh7pidq8k" path="res://objects/player.tscn" id="2_y7e0g"]
-[ext_resource type="PackedScene" uid="uid://dtkly4ehyjfiq" path="res://objects/tabliczka.tscn" id="3_1ueas"]
-[ext_resource type="PackedScene" uid="uid://tg5b081yo42x" path="res://objects/platforma.tscn" id="3_ddhsc"]
-[ext_resource type="Texture2D" uid="uid://cdxgkr2p7edo4" path="res://Grafiki/Bloki/Piaskowiec1.png" id="4_mowph"]
-[ext_resource type="Texture2D" uid="uid://o331xqy8751c" path="res://Grafiki/Bloki/Piasek.png" id="5_65bjk"]
-[ext_resource type="PackedScene" uid="uid://dpcmpwxkcu8gl" path="res://objects/kolce.tscn" id="5_eigfp"]
-[ext_resource type="PackedScene" uid="uid://cc2yqfumenit7" path="res://objects/zmiana_poziomu.tscn" id="6_62haa"]
-[ext_resource type="Script" path="res://levels/death.gd" id="8_grha3"]
+[ext_resource type="Script" path="res://levels/debug_level.gd" id="1_6vr4y"]
+[ext_resource type="PackedScene" uid="uid://cc2yqfumenit7" path="res://objects/zmiana_poziomu.tscn" id="2_51upq"]
+[ext_resource type="PackedScene" uid="uid://418nh7pidq8k" path="res://objects/player.tscn" id="3_eqm3r"]
+[ext_resource type="PackedScene" uid="uid://dpcmpwxkcu8gl" path="res://objects/kolce.tscn" id="4_1w1if"]
+[ext_resource type="PackedScene" uid="uid://tg5b081yo42x" path="res://objects/platforma.tscn" id="5_sgrvb"]
+[ext_resource type="Texture2D" uid="uid://cdxgkr2p7edo4" path="res://Grafiki/Bloki/Piaskowiec1.png" id="6_rjnmn"]
+[ext_resource type="Texture2D" uid="uid://o331xqy8751c" path="res://Grafiki/Bloki/Piasek.png" id="7_svsgg"]
+[ext_resource type="PackedScene" uid="uid://dtkly4ehyjfiq" path="res://objects/tabliczka.tscn" id="8_trfbn"]
+[ext_resource type="Script" path="res://levels/death.gd" id="9_8n24c"]
 
 [sub_resource type="Curve2D" id="Curve2D_m5gwo"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 130, 10, 0, 0, 0, 0, 190, 10, 0, 0, 0, 0, 280, -90)
+"points": PackedVector2Array(0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 20, -180)
 }
-point_count = 5
+point_count = 2
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8xkbq"]
-texture = ExtResource("4_mowph")
+texture = ExtResource("6_rjnmn")
 texture_region_size = Vector2i(20, 20)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
@@ -58,7 +58,7 @@ physics_layer_0/collision_mask = 9
 sources/1 = SubResource("TileSetAtlasSource_8xkbq")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pp4i4"]
-texture = ExtResource("5_65bjk")
+texture = ExtResource("7_svsgg")
 texture_region_size = Vector2i(20, 20)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
@@ -101,27 +101,27 @@ sources/1 = SubResource("TileSetAtlasSource_pp4i4")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8fc75"]
 
 [node name="Main" type="Node2D"]
-script = ExtResource("1_7ryir")
+script = ExtResource("1_6vr4y")
 
-[node name="Zmiana poziomu" parent="." instance=ExtResource("6_62haa")]
+[node name="Zmiana poziomu" parent="." instance=ExtResource("2_51upq")]
 position = Vector2(190, 140)
 next_level = "res://levels/poziom.tscn"
 
-[node name="Player" parent="." instance=ExtResource("2_y7e0g")]
+[node name="Player" parent="." instance=ExtResource("3_eqm3r")]
 unique_name_in_owner = true
 position = Vector2(140, 260)
 
-[node name="Kolce" parent="." instance=ExtResource("5_eigfp")]
+[node name="Kolce" parent="." instance=ExtResource("4_1w1if")]
 position = Vector2(330, 281)
 
-[node name="Kolce2" parent="." instance=ExtResource("5_eigfp")]
+[node name="Kolce2" parent="." instance=ExtResource("4_1w1if")]
 position = Vector2(370, 281)
 
-[node name="Kolce3" parent="." instance=ExtResource("5_eigfp")]
+[node name="Kolce3" parent="." instance=ExtResource("4_1w1if")]
 position = Vector2(350, 281)
 
-[node name="Platforma" parent="." instance=ExtResource("3_ddhsc")]
-position = Vector2(170, 250)
+[node name="Platforma" parent="." instance=ExtResource("5_sgrvb")]
+position = Vector2(390, 290)
 curve = SubResource("Curve2D_m5gwo")
 loop = false
 speed_scale = 0.6
@@ -142,12 +142,12 @@ tile_map_data = PackedByteArray("AAALAA4AAQAAAAAAAAAMAA4AAQABAAAAAAANAA4AAQABAAA
 tile_set = SubResource("TileSet_xrht1")
 rendering_quadrant_size = 20
 
-[node name="Tabliczka" parent="." instance=ExtResource("3_1ueas")]
+[node name="Tabliczka" parent="." instance=ExtResource("8_trfbn")]
 position = Vector2(462, 254)
 tablet_type = "slonce"
 
 [node name="death" type="Area2D" parent="."]
-script = ExtResource("8_grha3")
+script = ExtResource("9_8n24c")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="death"]
 position = Vector2(260, 360)

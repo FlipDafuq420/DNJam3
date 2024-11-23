@@ -69,8 +69,8 @@ sprite_frames = SubResource("SpriteFrames_cq1vp")
 autoplay = "default"
 
 [node name="Area2D" type="Area2D" parent="."]
-collision_layer = 2
-collision_mask = 2
+collision_layer = 18
+collision_mask = 18
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("RectangleShape2D_ayqi7")

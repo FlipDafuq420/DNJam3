@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://c474lnid0jpna"]
+
+[ext_resource type="Texture2D" uid="uid://bx1hj1ofas635" path="res://textures/temp/tablets/insert.png" id="1_be222"]
+[ext_resource type="Script" path="res://objects/wtyczka.gd" id="1_o86y2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o5o4q"]
+size = Vector2(10, 25)
+
+[node name="Wtyczka" type="Area2D"]
+collision_layer = 16
+collision_mask = 16
+script = ExtResource("1_o86y2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_be222")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -7.5)
+shape = SubResource("RectangleShape2D_o5o4q")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
