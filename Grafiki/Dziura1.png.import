@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhqtyfk64c6tj"
-path="res://.godot/imported/dzienblock.png-a023817b026603d39adddc94d77cbe5c.ctex"
+uid="uid://xuq6w34xuf36"
+path="res://.godot/imported/Dziura1.png-6b33b964358ee6342fd652e0b0165497.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/dzienblock.png"
-dest_files=["res://.godot/imported/dzienblock.png-a023817b026603d39adddc94d77cbe5c.ctex"]
+source_file="res://Grafiki/Dziura1.png"
+dest_files=["res://.godot/imported/Dziura1.png-6b33b964358ee6342fd652e0b0165497.ctex"]
 
 [params]
 

@@ -1,9 +1,12 @@
-[gd_scene load_steps=11 format=3 uid="uid://dtkly4ehyjfiq"]
+[gd_scene load_steps=14 format=3 uid="uid://dtkly4ehyjfiq"]
 
 [ext_resource type="Texture2D" uid="uid://wsbgyneaun5k" path="res://textures/ufolud/ufolud.jpg" id="1_fpcio"]
 [ext_resource type="Script" path="res://objects/tabliczka.gd" id="1_qfwwy"]
+[ext_resource type="Texture2D" uid="uid://cowaualn750pt" path="res://textures/temp/tablets/no_front.png" id="3_1jrnm"]
 [ext_resource type="Texture2D" uid="uid://c6ohtxd66pd8r" path="res://Grafiki/Obiekty/Tabliczka Nie1.png" id="3_bcdjw"]
+[ext_resource type="Texture2D" uid="uid://c5ped7mx6g63h" path="res://textures/temp/tablets/ship_front.png" id="4_12gj0"]
 [ext_resource type="Texture2D" uid="uid://cxwuqkdnsbuis" path="res://Grafiki/Obiekty/Tabliczka Nie2.png" id="4_cguji"]
+[ext_resource type="Texture2D" uid="uid://dv36a3n6nu4mc" path="res://textures/temp/tablets/sun_front.png" id="5_prq1t"]
 [ext_resource type="Texture2D" uid="uid://07c3526pndx8" path="res://Grafiki/Obiekty/Tabliczka Ruchu1.png" id="5_so1d8"]
 [ext_resource type="Texture2D" uid="uid://cqira37togass" path="res://Grafiki/Obiekty/Tabliczka Ruchu2.png" id="6_7dc5h"]
 [ext_resource type="Texture2D" uid="uid://dl41js343qowj" path="res://Grafiki/Obiekty/Tabliczka Słońca1.png" id="7_yn5i8"]
@@ -20,6 +23,30 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_1jrnm")
+}],
+"loop": true,
+"name": &"in_nie",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("4_12gj0")
+}],
+"loop": true,
+"name": &"in_ruch",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_prq1t")
+}],
+"loop": true,
+"name": &"in_slonce",
 "speed": 5.0
 }, {
 "frames": [{
@@ -66,6 +93,7 @@ shape = SubResource("RectangleShape2D_ayqi7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_cq1vp")
+animation = &"slonce"
 autoplay = "default"
 
 [node name="Area2D" type="Area2D" parent="."]

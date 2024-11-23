@@ -73,6 +73,8 @@ click={
 2d_physics/layer_5="Insert Detection"
 2d_physics/layer_6="Player Detection"
 2d_physics/layer_8="Level Change"
+2d_physics/layer_9="Day Collision"
+2d_physics/layer_10="Night Collision"
 
 [rendering]
 

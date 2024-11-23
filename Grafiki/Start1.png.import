@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dh7jmvfbw7kxl"
-path="res://.godot/imported/nocblok.png-b05b99c9e608605fb905643d8bbbed66.ctex"
+uid="uid://dmgugiw37wtp8"
+path="res://.godot/imported/Start1.png-237ebd3778fa89bc69a18f2672f36b32.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/nocblok.png"
-dest_files=["res://.godot/imported/nocblok.png-b05b99c9e608605fb905643d8bbbed66.ctex"]
+source_file="res://Grafiki/Start1.png"
+dest_files=["res://.godot/imported/Start1.png-237ebd3778fa89bc69a18f2672f36b32.ctex"]
 
 [params]
 
