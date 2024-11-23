@@ -4,7 +4,11 @@ extends StaticBody2D
 @export var gravity = 0.3
 var reachable = false
 var locked = false
+<<<<<<< Updated upstream
 var inserted = false
+=======
+var near_insert = false
+>>>>>>> Stashed changes
 var locked_source
 var interact_source
 var velocity = Vector2(Vector2.ZERO)
@@ -22,6 +26,7 @@ func _ready() -> void:
 			$AnimatedSprite2D.animation = "default"
 
 func _input(event):
+<<<<<<< Updated upstream
 	if !inserted:
 		if event.get_action_strength("Interact") and reachable and !locked and interact_source != null:
 			locked = true
@@ -29,6 +34,14 @@ func _input(event):
 		elif event.get_action_strength("Interact") and locked:
 			locked = false;
 			locked_source = null
+=======
+	if event.get_action_strength("Interact") and reachable and !locked and interact_source != null:
+		locked = true
+		locked_source = interact_source
+	elif event.get_action_strength("Interact") and locked and !near_insert:
+		locked = false;
+		locked_source = null
+>>>>>>> Stashed changes
 
 func _physics_process(delta: float) -> void:
 	if !locked and !inserted:

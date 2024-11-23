@@ -14,16 +14,25 @@ func _process(delta: float) -> void:
 	pass
 	
 func _input(event: InputEvent) -> void:
+<<<<<<< Updated upstream
 	if event.get_action_strength("Interact") and reachable
 		held_item = interact_source
+=======
+	if event.get_action_strength("Interact") and reachable:
+		held_item = interact_source
+		held_item.locked = true
+		held_item.locked_source = $"."
+>>>>>>> Stashed changes
 
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "tabliczka":
 		interact_source = body
+		interact_source.near_insert = true
 		reachable = true
 
 
 func _on_body_exited(body: Node2D) -> void:
+	body.near_insert = false
 	interact_source = null
 	reachable = false
