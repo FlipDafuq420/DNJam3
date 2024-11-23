@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732371453
+::res://::1732371838
 global.gd::GDScript::-1::1732371453::0::1::::<>Node<>::
 icon.svg::CompressedTexture2D::4408366649361057546::1732314901::1732314983::1::::<><>::
 kostka.gd::GDScript::-1::1732371453::0::1::::<>Node2D<>::
@@ -8,17 +8,17 @@ node_2d.gd::GDScript::-1::1732371453::0::1::::<>Node2D<>::
 ::res://alien_lang/::1732367460
 ufolud.png::CompressedTexture2D::1349451710109139015::1732367106::1732367460::1::::<><>::
 ::res://Grafiki/::1732367432
-::res://Grafiki/Bloki/::1732371615
+::res://Grafiki/Bloki/::1732371635
 Piaskowiec1.png::CompressedTexture2D::5031271681870448837::1732367106::1732371635::1::::<><>::
 Piaskowiec.png::CompressedTexture2D::6143964935046969850::1732367106::1732367459::1::::<><>::
-::res://Grafiki/Henryk/::1732371615
+::res://Grafiki/Henryk/::1732371635
 Fat Dude.png::CompressedTexture2D::2759736086304761427::1732367106::1732367459::1::::<><>::
 Henryk Lewo.png::CompressedTexture2D::8742951583333144881::1732367438::1732367459::1::::<><>::
 Henryk Prawo.png::CompressedTexture2D::1004167914173203999::1732367106::1732367459::1::::<><>::
 Henryk Przedmiot1.png::CompressedTexture2D::3286894214673609947::1732367106::1732371635::1::::<><>::
 Henryk Skok.png::CompressedTexture2D::3353933836667650706::1732367106::1732371635::1::::<><>::
 Henryk.png::CompressedTexture2D::2882467374936611740::1732367106::1732367459::1::::<><>::
-::res://Grafiki/Henryk/Henryk Ruch Lewo/::1732371615
+::res://Grafiki/Henryk/Henryk Ruch Lewo/::1732371635
 Henryk Ruch Lewo1.png::CompressedTexture2D::345187232784643805::1732367438::1732371635::1::::<><>::
 Henryk Ruch Lewo2.png::CompressedTexture2D::7563921674018504973::1732367438::1732371635::1::::<><>::
 Henryk Ruch Lewo3.png::CompressedTexture2D::8221542635952484749::1732367438::1732371635::1::::<><>::
@@ -41,7 +41,7 @@ Image17.png::CompressedTexture2D::8968459376111558538::1732367438::1732367459::1
 Image18.png::CompressedTexture2D::3080739709067393517::1732367438::1732367459::1::::<><>::
 Image19.png::CompressedTexture2D::3002693803012457544::1732367438::1732367459::1::::<><>::
 Image110.png::CompressedTexture2D::5160663902778855005::1732367438::1732367459::1::::<><>::
-::res://Grafiki/Henryk/Henryk Ruch Prawo/::1732371615
+::res://Grafiki/Henryk/Henryk Ruch Prawo/::1732371635
 Henryk Ruch Prawo1.png::CompressedTexture2D::857734128669185495::1732367106::1732367459::1::::<><>::
 Henryk Ruch Prawo2.png::CompressedTexture2D::4293044174408243232::1732367106::1732367459::1::::<><>::
 Henryk Ruch Prawo3.png::CompressedTexture2D::4692805498662032213::1732367106::1732367459::1::::<><>::
@@ -54,7 +54,7 @@ Henryk Ruch Prawo9.png::CompressedTexture2D::3887759976223392800::1732367106::17
 Henryk Ruch Prawo10.png::CompressedTexture2D::4353350200731455125::1732367106::1732367459::1::::<><>::
 Henryk Ruch Prawo11.png::CompressedTexture2D::5386142976211074351::1732367106::1732371635::1::::<><>::
 Henryk Ruch Prawo12.png::CompressedTexture2D::3544160782519450351::1732367106::1732371635::1::::<><>::
-::res://Grafiki/Obiekty/::1732371615
+::res://Grafiki/Obiekty/::1732371635
 Kolce1.png::CompressedTexture2D::8883078851853083574::1732367432::1732371635::1::::<><>::
 Tabliczka Nie1.png::CompressedTexture2D::6978056971877586439::1732371453::1732371635::1::::<><>::
 Tabliczka Nie2.png::CompressedTexture2D::6433844524690761594::1732371453::1732371635::1::::<><>::
@@ -62,36 +62,36 @@ Tabliczka Ruchu1.png::CompressedTexture2D::1820954234134874419::1732371453::1732
 Tabliczka Ruchu2.png::CompressedTexture2D::5913411597473991910::1732371453::1732371635::1::::<><>::
 Tabliczka Słońca1.png::CompressedTexture2D::7992801989952981773::1732371453::1732371635::1::::<><>::
 Tabliczka Słońca2.png::CompressedTexture2D::1188736930418068779::1732371453::1732371635::1::::<><>::
-::res://levels/::1732371615
-kolce.tscn::PackedScene::8216980043481735579::1732371615::0::1::::<><>::uid://cfnbjvm4c1dn8::::res://textures/temp/terrain/blok.png<>res://levels/kolce.gd
+::res://levels/::1732371704
+kolce.gd::GDScript::-1::1732371453::0::1::::<>Path2D<>::
+kolce.tscn::PackedScene::8216980043481735579::1732371704::0::1::::<><>::res://levels/kolce.gd<>uid://dytbamsxhbj3c::::res://Grafiki/Obiekty/Kolce1.png
 kostka.tscn::PackedScene::-1::1732371453::0::1::::<><>::
 menu.tscn::PackedScene::-1::1732371453::0::1::::<><>::
-player.gd::GDScript::-1::1732371453::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::2091177580980102180::1732371453::0::1::::<><>::res://levels/player.gd<>uid://deuve1itsup8g::::res://textures/temp/Main_Character/Walking.tres
-poziom.gd::GDScript::-1::1732367106::0::1::::<>Node2D<>::
-poziom.tscn::PackedScene::4629703996848271805::1732371076::0::1::::<><>::uid://418nh7pidq8k::::res://levels/player.tscn<>uid://ctsgg714lpkw5::::res://Grafiki/Bloki/Piaskowiec.png<>uid://dtkly4ehyjfiq::::res://levels/tabliczka.tscn<>uid://tg5b081yo42x::::res://levels/platforma.tscn<>uid://dpcmpwxkcu8gl::::res://levels/kolce.tscn
-kolce.gd::GDScript::-1::1732371453::0::1::::<>Path2D<>::
-platforma.tscn::PackedScene::1347798956500149905::1732371615::0::1::::<><>::uid://ctsgg714lpkw5::::res://Grafiki/Bloki/Piaskowiec.png<>res://levels/platforma.gd
 platforma.gd::GDScript::-1::1732371615::0::1::::<>Path2D<>::
+platforma.tscn::PackedScene::1347798956500149905::1732371704::0::1::::<><>::uid://ctsgg714lpkw5::::res://Grafiki/Bloki/Piaskowiec.png<>res://levels/platforma.gd
+player.gd::GDScript::-1::1732371453::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::2091177580980102180::1732371703::0::1::::<><>::res://levels/player.gd<>uid://deuve1itsup8g::::res://textures/temp/Main_Character/Walking.tres
+poziom.gd::GDScript::-1::1732367106::0::1::::<>Node2D<>::
+poziom.tscn::PackedScene::4629703996848271805::1732371703::0::1::::<><>::uid://418nh7pidq8k::::res://levels/player.tscn<>uid://ctsgg714lpkw5::::res://Grafiki/Bloki/Piaskowiec.png<>uid://dtkly4ehyjfiq::::res://levels/tabliczka.tscn<>uid://tg5b081yo42x::::res://levels/platforma.tscn<>uid://dpcmpwxkcu8gl::::res://levels/kolce.tscn
 rigid_body_2d.gd::GDScript::-1::1732371453::0::1::::<>RigidBody2D<>::
 static_body_2d_2.gd::GDScript::-1::1732371453::0::1::::<>StaticBody2D<>::
 tabliczka.gd::GDScript::-1::1732367106::0::1::::<>Area2D<>::
-tabliczka.tscn::PackedScene::8514206133423516508::1732371615::0::1::::<><>::uid://wsbgyneaun5k::::res://textures/ufolud/ufolud.jpg<>res://levels/tabliczka.gd<>uid://bhkcbdi5nxvfd::::res://textures/temp/tablets/nie.png<>uid://ynpuhr2m7k3n::::res://textures/temp/tablets/ruch.png<>uid://dcrkcfpykohx3::::res://textures/temp/tablets/slonce.png
+tabliczka.tscn::PackedScene::8514206133423516508::1732371703::0::1::::<><>::uid://wsbgyneaun5k::::res://textures/ufolud/ufolud.jpg<>res://levels/tabliczka.gd<>uid://c6ohtxd66pd8r::::res://Grafiki/Obiekty/Tabliczka Nie1.png<>uid://cxwuqkdnsbuis::::res://Grafiki/Obiekty/Tabliczka Nie2.png<>uid://07c3526pndx8::::res://Grafiki/Obiekty/Tabliczka Ruchu1.png<>uid://cqira37togass::::res://Grafiki/Obiekty/Tabliczka Ruchu2.png<>uid://dl41js343qowj::::res://Grafiki/Obiekty/Tabliczka Słońca1.png<>uid://q63labqxt0d0::::res://Grafiki/Obiekty/Tabliczka Słońca2.png
 ::res://Scripts/::1732367106
 ::res://Scripts/Main_Character/::1732367459
 main_sprite.png::CompressedTexture2D::7397904994374056882::1732367106::1732367459::1::::<><>::
-::res://sounds/::1732371453
+::res://sounds/::1732371635
 desktop.ini::TextFile::-1::1732371453::0::1::::<><>::
 menuoff.mp3::AudioStreamMP3::1597042678324999145::1732371453::1732371635::1::::<><>::
 menutheme.mp3::AudioStreamMP3::7462325345557687729::1732371453::1732371635::1::::<><>::
-::res://textures/::1732371453
+::res://textures/::1732371635
 place_holder_tiles_set.png::CompressedTexture2D::4619127300094836014::1732367106::1732367459::1::::<><>::
 start_block.png::CompressedTexture2D::5764748847072995452::1732371453::1732371635::1::::<><>::
 stop.png::CompressedTexture2D::8444956792700660947::1732371453::1732371635::1::::<><>::
 sun.png::CompressedTexture2D::6586360555193766803::1732371453::1732371635::1::::<><>::
 ::res://textures/temp/::1732367106
-::res://textures/temp/Main_Character/::1732371453
-Walking.tres::SpriteFrames::7482588559590014276::1732371453::0::1::::<><>::uid://dwtfeuksnhif6::::res://Grafiki/Henryk/Henryk Lewo.png<>uid://bhcj2057my5mm::::res://Grafiki/Henryk/Henryk.png<>uid://okoq7wib6dtf::::res://Grafiki/Henryk/Henryk Prawo.png<>uid://2xwsfowh6rrt::::res://Grafiki/Henryk/Henryk Ruch Lewo/Image11.png<>uid://c5gxeu6nakg4h::::res://Grafiki/Henryk/Henryk Ruch Lewo/Image12.png<>uid://ke7cvxhbervk::::res://Grafiki/Henryk/Henryk Ruch Lewo/Image13.png<>uid://bsslbudjah6hj::::res://Grafiki/Henryk/Henryk Ruch Lewo/Image14.png<>uid://cerfygrehhugu::::res://Grafiki/Henryk/Henryk Ruch Lewo/Image15.png<>uid://bxokmm3r402ju::::res://Grafiki/Henryk/Henryk Ruch Lewo/Image16.png<>uid://d01nhlit0p5uc::::res://Grafiki/Henryk/Henryk Ruch Lewo/Image17.png<>uid://bj5llk3teetc4::::res://Grafiki/Henryk/Henryk Ruch Lewo/Image18.png<>uid://bi1r6tbn6xlxg::::res://Grafiki/Henryk/Henryk Ruch Lewo/Image19.png<>uid://cfr4m64a7ljqb::::res://Grafiki/Henryk/Henryk Ruch Lewo/Image110.png<>uid://mhq0xxjtp8y2::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo1.png<>uid://b2ft2s0imbb5y::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo2.png<>uid://b74h26abwrfur::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo3.png<>uid://mq5dkukk5us::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo4.png<>uid://ba0tmvslo3f3p::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo5.png<>uid://dveplwx06yom7::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo6.png<>uid://cnh4sslgageb4::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo7.png<>uid://wfe6f731kc6t::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo8.png<>uid://bvni3rwgbtr1a::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo9.png<>uid://b3a2boj4ui7un::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo10.png
+::res://textures/temp/Main_Character/::1732371643
+Walking.tres::SpriteFrames::7482588559590014276::1732371643::0::1::::<><>::uid://dwtfeuksnhif6::::res://Grafiki/Henryk/Henryk Lewo.png<>uid://bhcj2057my5mm::::res://Grafiki/Henryk/Henryk.png<>uid://okoq7wib6dtf::::res://Grafiki/Henryk/Henryk Prawo.png<>uid://bn1w2hd8a1vti::::res://Grafiki/Henryk/Henryk Skok.png<>uid://e6hgh5c88n7r::::res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo1.png<>uid://df1axjycfq41v::::res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo2.png<>uid://dpetuutqan2hl::::res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo3.png<>uid://bb8kuatys3qvv::::res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo4.png<>uid://bspv1ixsh00pg::::res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo5.png<>uid://quc2f48qxr7b::::res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo6.png<>uid://d30jnqljkpbb3::::res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo7.png<>uid://tjlbehfif6i4::::res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo8.png<>uid://mhq0xxjtp8y2::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo1.png<>uid://dicgboyknwpwd::::res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo9.png<>uid://chqdi1e4ltf8n::::res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo10.png<>uid://b2ft2s0imbb5y::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo2.png<>uid://b74h26abwrfur::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo3.png<>uid://c0ivb3d60j6cb::::res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo11.png<>uid://chgma5mpu2hn0::::res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo12.png<>uid://mq5dkukk5us::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo4.png<>uid://ba0tmvslo3f3p::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo5.png<>uid://dveplwx06yom7::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo6.png<>uid://cnh4sslgageb4::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo7.png<>uid://wfe6f731kc6t::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo8.png<>uid://bvni3rwgbtr1a::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo9.png<>uid://b3a2boj4ui7un::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo10.png<>uid://ci0c8uae16okl::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo11.png<>uid://bqq22sxh733hr::::res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo12.png
 ::res://textures/temp/tablets/::1732367459
 nie.png::CompressedTexture2D::2898509757789212617::1732367106::1732367459::1::::<><>::
 ruch.png::CompressedTexture2D::1712316024054337997::1732367106::1732367459::1::::<><>::

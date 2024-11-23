@@ -1,24 +1,10 @@
-[gd_resource type="SpriteFrames" load_steps=29 format=3 uid="uid://deuve1itsup8g"]
+[gd_resource type="SpriteFrames" load_steps=15 format=3 uid="uid://deuve1itsup8g"]
 
-[ext_resource type="Texture2D" uid="uid://dwtfeuksnhif6" path="res://Grafiki/Henryk/Henryk Lewo.png" id="1_2uukg"]
-[ext_resource type="Texture2D" uid="uid://bhcj2057my5mm" path="res://Grafiki/Henryk/Henryk.png" id="1_k27gy"]
 [ext_resource type="Texture2D" uid="uid://okoq7wib6dtf" path="res://Grafiki/Henryk/Henryk Prawo.png" id="1_v1ixb"]
 [ext_resource type="Texture2D" uid="uid://bn1w2hd8a1vti" path="res://Grafiki/Henryk/Henryk Skok.png" id="3_m5y5y"]
-[ext_resource type="Texture2D" uid="uid://e6hgh5c88n7r" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo1.png" id="4_svc44"]
-[ext_resource type="Texture2D" uid="uid://df1axjycfq41v" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo2.png" id="5_nqq7q"]
-[ext_resource type="Texture2D" uid="uid://dpetuutqan2hl" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo3.png" id="6_1b86e"]
-[ext_resource type="Texture2D" uid="uid://bb8kuatys3qvv" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo4.png" id="7_w6ppt"]
-[ext_resource type="Texture2D" uid="uid://bspv1ixsh00pg" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo5.png" id="8_e5oao"]
-[ext_resource type="Texture2D" uid="uid://quc2f48qxr7b" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo6.png" id="9_58kjx"]
-[ext_resource type="Texture2D" uid="uid://d30jnqljkpbb3" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo7.png" id="10_hs3l1"]
-[ext_resource type="Texture2D" uid="uid://tjlbehfif6i4" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo8.png" id="11_udipo"]
 [ext_resource type="Texture2D" uid="uid://mhq0xxjtp8y2" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo1.png" id="12_h03k5"]
-[ext_resource type="Texture2D" uid="uid://dicgboyknwpwd" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo9.png" id="12_va2jd"]
-[ext_resource type="Texture2D" uid="uid://chqdi1e4ltf8n" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo10.png" id="13_1ewii"]
 [ext_resource type="Texture2D" uid="uid://b2ft2s0imbb5y" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo2.png" id="13_h5y1b"]
 [ext_resource type="Texture2D" uid="uid://b74h26abwrfur" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo3.png" id="14_42ok2"]
-[ext_resource type="Texture2D" uid="uid://c0ivb3d60j6cb" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo11.png" id="14_qkt55"]
-[ext_resource type="Texture2D" uid="uid://chgma5mpu2hn0" path="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo12.png" id="15_h1ol4"]
 [ext_resource type="Texture2D" uid="uid://mq5dkukk5us" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo4.png" id="15_ovu01"]
 [ext_resource type="Texture2D" uid="uid://ba0tmvslo3f3p" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo5.png" id="16_tprhs"]
 [ext_resource type="Texture2D" uid="uid://dveplwx06yom7" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo6.png" id="17_dhnci"]
@@ -31,14 +17,6 @@
 
 [resource]
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("1_2uukg")
-}],
-"loop": true,
-"name": &"Face_Left",
-"speed": 5.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": ExtResource("1_v1ixb")
@@ -54,47 +32,6 @@ animations = [{
 "loop": true,
 "name": &"Jump",
 "speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("4_svc44")
-}, {
-"duration": 1.0,
-"texture": ExtResource("5_nqq7q")
-}, {
-"duration": 1.0,
-"texture": ExtResource("6_1b86e")
-}, {
-"duration": 1.0,
-"texture": ExtResource("7_w6ppt")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_e5oao")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_58kjx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("10_hs3l1")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_udipo")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_va2jd")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_1ewii")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_qkt55")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_h1ol4")
-}],
-"loop": true,
-"name": &"Walk_Left",
-"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -139,7 +76,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("1_k27gy")
+"texture": ExtResource("1_v1ixb")
 }],
 "loop": true,
 "name": &"default",

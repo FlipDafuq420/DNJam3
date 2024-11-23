@@ -1,10 +1,6 @@
-res://levels/poziom.tscn
 res://levels/player.tscn
+res://textures/temp/Main_Character/Walking.tres
+res://levels/poziom.tscn
 res://levels/tabliczka.tscn
 res://levels/kolce.tscn
-res://levels/kolce.gd
-res://levels/tabliczka.gd
-res://levels/player.gd
-res://textures/temp/Main_Character/Walking.tres
 res://levels/platforma.tscn
-res://levels/platforma.gd
