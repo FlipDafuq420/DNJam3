@@ -1,11 +1,15 @@
-[gd_scene load_steps=11 format=3 uid="uid://du8lainsgvpes"]
+[gd_scene load_steps=15 format=3 uid="uid://du8lainsgvpes"]
 
 [ext_resource type="Texture2D" uid="uid://bys8dwgd7gqog" path="res://mmenu.png" id="1_y801q"]
 [ext_resource type="Texture2D" uid="uid://c03qnp36ssqjr" path="res://textures/sun.png" id="2_r0um3"]
+[ext_resource type="Texture2D" uid="uid://cniqexj8tj55e" path="res://textures/play.png" id="3_51dpa"]
 [ext_resource type="Script" path="res://levels/static_body_2d_2.gd" id="3_b2oei"]
 [ext_resource type="PackedScene" uid="uid://burqjxooglj5w" path="res://levels/kostka.tscn" id="4_wbiiv"]
 [ext_resource type="Texture2D" uid="uid://dsk2g7pynyoj0" path="res://textures/stop.png" id="5_a28iu"]
 [ext_resource type="AudioStream" uid="uid://dek2n44gikr2h" path="res://sounds/menutheme.mp3" id="6_0pxqf"]
+[ext_resource type="Texture2D" uid="uid://d0vg5r118q8t6" path="res://textures/go.png" id="6_ntkhq"]
+[ext_resource type="Texture2D" uid="uid://egdyk536pgt8" path="res://textures/no.png" id="8_6eurh"]
+[ext_resource type="Texture2D" uid="uid://cbhtso4awmhkp" path="res://Grafiki/logo.png" id="10_rhgha"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0sato"]
 size = Vector2(632, 50)
@@ -25,9 +29,17 @@ size = Vector2(60, 60)
 position = Vector2(270, 180)
 texture = ExtResource("1_y801q")
 
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(270, 92)
+texture = ExtResource("10_rhgha")
+
 [node name="Sprite2D3" type="Sprite2D" parent="."]
-position = Vector2(327, 48)
+position = Vector2(260, 292)
 texture = ExtResource("2_r0um3")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sprite2D3"]
+position = Vector2(0, 60)
+texture = ExtResource("3_51dpa")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 visible = false
@@ -50,7 +62,7 @@ position = Vector2(572, -205)
 shape = SubResource("RectangleShape2D_lfsvv")
 
 [node name="pole" type="StaticBody2D" parent="." groups=["dropable"]]
-position = Vector2(240, 48)
+position = Vector2(180, 292)
 script = ExtResource("3_b2oei")
 metadata/_edit_group_ = true
 
@@ -64,15 +76,23 @@ offset_right = 30.0
 offset_bottom = 30.0
 
 [node name="kostka" parent="." instance=ExtResource("4_wbiiv")]
-position = Vector2(101, 330)
+position = Vector2(180, 191)
+
+[node name="Sprite2D2" type="Sprite2D" parent="kostka"]
+position = Vector2(0, 60)
+texture = ExtResource("6_ntkhq")
 
 [node name="kostka2" parent="." instance=ExtResource("4_wbiiv")]
-position = Vector2(412, 330)
+position = Vector2(360, 191)
 start = false
 metadata/_edit_group_ = true
 
 [node name="Sprite2D2" type="Sprite2D" parent="kostka2"]
 texture = ExtResource("5_a28iu")
+
+[node name="Sprite2D3" type="Sprite2D" parent="kostka2"]
+position = Vector2(0, 60)
+texture = ExtResource("8_6eurh")
 
 [node name="menutheme" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_0pxqf")
