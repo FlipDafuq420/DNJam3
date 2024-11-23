@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5g38sjugw8f2"
-path="res://.godot/imported/Henryk Ruch Lewo11.png-8ee9710fa65a6687ebfa109bf4662ccb.ctex"
+uid="uid://nr3nacwidhq8"
+path="res://.godot/imported/Tabliczka statek1.png-e4db7e07de07e69df4e19c8ab441ad3e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Grafiki/Henryk/Henryk Ruch Lewo/Henryk Ruch Lewo11.png"
-dest_files=["res://.godot/imported/Henryk Ruch Lewo11.png-8ee9710fa65a6687ebfa109bf4662ccb.ctex"]
+source_file="res://textures/temp/tablets/Tabliczka statek1.png"
+dest_files=["res://.godot/imported/Tabliczka statek1.png-e4db7e07de07e69df4e19c8ab441ad3e.ctex"]
 
 [params]
 
