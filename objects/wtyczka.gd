@@ -20,11 +20,13 @@ func _input(event: InputEvent) -> void:
 		held_item.locked = true
 		held_item.locked_source = near_player
 		held_item = null
+		taken_out()
 	if event.get_action_strength("Interact") and reachable:
 		held_item = interact_source
 		held_item.locked = true
 		held_item.locked_source = $"."
 		reachable = false
+		inserted()
 
 func _on_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
 	print_debug(area)
@@ -41,7 +43,6 @@ func _on_area_shape_exited(area_rid: RID, area: Area2D, area_shape_index: int, l
 
 
 func _on_body_entered(body: Node2D) -> void:
-	print_debug("grnuydiefiguedrffger")
 	if held_item == null:
 		pass
 	if body.name == "Player":
@@ -50,3 +51,11 @@ func _on_body_entered(body: Node2D) -> void:
 
 func _on_body_exited(body: Node2D) -> void:
 	near_player = null
+	
+func inserted():
+	get_tree().current_scene.daytime = "night"
+	get_tree().current_scene.change_time()
+	
+func taken_out():
+	get_tree().current_scene.daytime = "day"
+	get_tree().current_scene.change_time()
