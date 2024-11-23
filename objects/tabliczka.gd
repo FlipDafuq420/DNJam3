@@ -27,7 +27,7 @@ func _input(event):
 		locked_source = null
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if locked:
 		var locked_position = locked_source.position
 		locked_position.y -= 25
@@ -39,6 +39,6 @@ func _on_body_entered(body: Node2D) -> void:
 		interact_source = body
 		reachable = true
 
-func _on_body_exited(body: Node2D) -> void:
+func _on_body_exited(_body: Node2D) -> void:
 	interact_source = null
 	reachable = false
