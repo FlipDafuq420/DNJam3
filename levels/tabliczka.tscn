@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://dx65kwrdluap2"]
+
+[ext_resource type="Texture2D" uid="uid://wsbgyneaun5k" path="res://textures/ufolud/ufolud.jpg" id="1_fpcio"]
+[ext_resource type="Script" path="res://levels/tabliczka.gd" id="1_qfwwy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ayqi7"]
+size = Vector2(28, 28)
+
+[node name="StaticBody2D" type="Area2D"]
+script = ExtResource("1_qfwwy")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.109556, 0.145619)
+texture = ExtResource("1_fpcio")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ayqi7")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
