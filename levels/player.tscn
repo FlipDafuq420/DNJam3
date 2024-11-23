@@ -15,4 +15,5 @@ shape = SubResource("RectangleShape2D_5u7fg")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, 0)
 sprite_frames = ExtResource("1_clf27")
+animation = &"Jump"
 autoplay = "default"

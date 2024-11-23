@@ -62,9 +62,7 @@ collision_layer = 7
 collision_mask = 7
 
 [node name="Kolce" parent="." instance=ExtResource("5_eigfp")]
-position = Vector2(330, 281)
-collision_layer = 1
-collision_mask = 1
+position = Vector2(370, 277)
 
 [node name="Platforma" parent="." instance=ExtResource("3_ddhsc")]
 position = Vector2(170, 250)
@@ -85,4 +83,4 @@ rendering_quadrant_size = 20
 
 [node name="Tabliczka" parent="." instance=ExtResource("3_1ueas")]
 position = Vector2(462, 254)
-tablet_type = "nie"
+tablet_type = "slonce"

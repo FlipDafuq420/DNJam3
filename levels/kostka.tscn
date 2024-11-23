@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://burqjxooglj5w"]
+
+[ext_resource type="Script" path="res://kostka.gd" id="1_o1r6t"]
+[ext_resource type="Texture2D" uid="uid://coeqtonh6uvhk" path="res://textures/start_block.png" id="2_7cbph"]
+[ext_resource type="AudioStream" uid="uid://w0vca41pe5vx" path="res://sounds/menuoff.mp3" id="3_xwdsn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4m3tj"]
+size = Vector2(60, 60)
+
+[node name="kostka" type="Node2D"]
+script = ExtResource("1_o1r6t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_7cbph")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_4m3tj")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_xwdsn")
+
+[connection signal="body_shape_entered" from="Area2D" to="." method="_on_area_2d_body_shape_entered"]
+[connection signal="body_shape_exited" from="Area2D" to="." method="_on_area_2d_body_shape_exited"]
+[connection signal="mouse_shape_entered" from="Area2D" to="." method="_on_area_2d_mouse_shape_entered"]
+[connection signal="mouse_shape_exited" from="Area2D" to="." method="_on_area_2d_mouse_shape_exited"]
