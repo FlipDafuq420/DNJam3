@@ -144,13 +144,13 @@ unique_name_in_owner = true
 position = Vector2(140, 260)
 
 [node name="Kolce" parent="." instance=ExtResource("4_1w1if")]
-position = Vector2(330, 281)
+position = Vector2(330, 280)
 
 [node name="Kolce2" parent="." instance=ExtResource("4_1w1if")]
-position = Vector2(370, 281)
+position = Vector2(370, 280)
 
 [node name="Kolce3" parent="." instance=ExtResource("4_1w1if")]
-position = Vector2(350, 281)
+position = Vector2(350, 280)
 
 [node name="Platforma" parent="." instance=ExtResource("5_sgrvb")]
 position = Vector2(390, 290)
