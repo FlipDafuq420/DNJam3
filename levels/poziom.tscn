@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=4 uid="uid://b67wsv8dhn334"]
 
 [ext_resource type="Texture2D" uid="uid://b62sl7v7nyrtu" path="res://textures/place_holder_tiles_set.png" id="2_cmhk4"]
-[ext_resource type="PackedScene" uid="uid://cunqde6kl3dvy" path="res://levels/player.tscn" id="2_y7e0g"]
+[ext_resource type="PackedScene" uid="uid://418nh7pidq8k" path="res://levels/player.tscn" id="2_y7e0g"]
 [ext_resource type="Texture2D" uid="uid://ctsgg714lpkw5" path="res://Grafiki/Bloki/Piaskowiec.png" id="3_0hc5d"]
-[ext_resource type="PackedScene" uid="uid://dx65kwrdluap2" path="res://levels/tabliczka.tscn" id="3_1ueas"]
-[ext_resource type="PackedScene" uid="uid://cf4npahou7jkp" path="res://levels/kolce.tscn" id="5_eigfp"]
+[ext_resource type="PackedScene" uid="uid://dtkly4ehyjfiq" path="res://levels/tabliczka.tscn" id="3_1ueas"]
+[ext_resource type="PackedScene" uid="uid://dpcmpwxkcu8gl" path="res://levels/kolce.tscn" id="5_eigfp"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wkifu"]
 texture = ExtResource("2_cmhk4")
@@ -92,9 +92,7 @@ collision_layer = 7
 collision_mask = 7
 
 [node name="Kolce" parent="." instance=ExtResource("5_eigfp")]
-position = Vector2(330, 281)
-collision_layer = 1
-collision_mask = 1
+position = Vector2(370, 277)
 
 [node name="Level" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_xyrvk")

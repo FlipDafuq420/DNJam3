@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dx65kwrdluap2"]
+[gd_scene load_steps=8 format=3 uid="uid://dtkly4ehyjfiq"]
 
 [ext_resource type="Texture2D" uid="uid://wsbgyneaun5k" path="res://textures/ufolud/ufolud.jpg" id="1_fpcio"]
 [ext_resource type="Script" path="res://levels/tabliczka.gd" id="1_qfwwy"]
