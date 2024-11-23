@@ -1,5 +1,6 @@
-[gd_scene load_steps=15 format=4 uid="uid://b67wsv8dhn334"]
+[gd_scene load_steps=16 format=4 uid="uid://b67wsv8dhn334"]
 
+[ext_resource type="Script" path="res://levels/poziom.gd" id="1_7ryir"]
 [ext_resource type="PackedScene" uid="uid://418nh7pidq8k" path="res://objects/player.tscn" id="2_y7e0g"]
 [ext_resource type="PackedScene" uid="uid://dtkly4ehyjfiq" path="res://objects/tabliczka.tscn" id="3_1ueas"]
 [ext_resource type="PackedScene" uid="uid://tg5b081yo42x" path="res://objects/platforma.tscn" id="3_ddhsc"]
@@ -100,6 +101,11 @@ sources/1 = SubResource("TileSetAtlasSource_pp4i4")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8fc75"]
 
 [node name="Main" type="Node2D"]
+script = ExtResource("1_7ryir")
+
+[node name="Zmiana poziomu" parent="." instance=ExtResource("6_62haa")]
+position = Vector2(190, 140)
+next_level = "res://levels/poziom.tscn"
 
 [node name="Player" parent="." instance=ExtResource("2_y7e0g")]
 unique_name_in_owner = true
@@ -139,11 +145,6 @@ rendering_quadrant_size = 20
 [node name="Tabliczka" parent="." instance=ExtResource("3_1ueas")]
 position = Vector2(462, 254)
 tablet_type = "slonce"
-gravity = 100.0
-
-[node name="Zmiana poziomu" parent="." instance=ExtResource("6_62haa")]
-position = Vector2(190, 150)
-next_level = "res://levels/poziom.tscn"
 
 [node name="death" type="Area2D" parent="."]
 script = ExtResource("8_grha3")
