@@ -35,12 +35,10 @@ func _physics_process(delta: float) -> void:
 		move_and_collide(velocity * delta)
 
 		
-#func _process(delta: float) -> void:
-	#if locked:
-		#var locked_position = locked_source.get_node("HoldPoint").global_position
-		#position = locked_position
-	#if inserted:
-		#position = locked_position
+func _process(delta: float) -> void:
+	if locked:
+		var locked_position = locked_source.get_node("HoldPoint").global_position
+		position = locked_position
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
