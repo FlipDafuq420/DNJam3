@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxgbqc0nhq0wu"
-path="res://.godot/imported/mmenu.png-d834101aeb289825bf5dedb23827a912.ctex"
+uid="uid://8ehpnxds3gll"
+path="res://.godot/imported/Przejście1.png-67e60f37fc5b8a850949db0e76e3ec44.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mmenu.png"
-dest_files=["res://.godot/imported/mmenu.png-d834101aeb289825bf5dedb23827a912.ctex"]
+source_file="res://Grafiki/Obiekty/Przejście1.png"
+dest_files=["res://.godot/imported/Przejście1.png-67e60f37fc5b8a850949db0e76e3ec44.ctex"]
 
 [params]
 

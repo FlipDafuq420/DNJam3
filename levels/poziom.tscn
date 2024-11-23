@@ -1,21 +1,23 @@
-[gd_scene load_steps=13 format=4 uid="uid://b67wsv8dhn334"]
+[gd_scene load_steps=16 format=4 uid="uid://b67wsv8dhn334"]
 
+[ext_resource type="Script" path="res://levels/poziom.gd" id="1_7ryir"]
 [ext_resource type="PackedScene" uid="uid://418nh7pidq8k" path="res://objects/player.tscn" id="2_y7e0g"]
-[ext_resource type="Texture2D" uid="uid://ctsgg714lpkw5" path="res://Grafiki/Bloki/Piaskowiec.png" id="3_0hc5d"]
 [ext_resource type="PackedScene" uid="uid://dtkly4ehyjfiq" path="res://objects/tabliczka.tscn" id="3_1ueas"]
 [ext_resource type="PackedScene" uid="uid://tg5b081yo42x" path="res://objects/platforma.tscn" id="3_ddhsc"]
+[ext_resource type="Texture2D" uid="uid://cdxgkr2p7edo4" path="res://Grafiki/Bloki/Piaskowiec1.png" id="4_mowph"]
 [ext_resource type="Texture2D" uid="uid://o331xqy8751c" path="res://Grafiki/Bloki/Piasek.png" id="5_65bjk"]
 [ext_resource type="PackedScene" uid="uid://dpcmpwxkcu8gl" path="res://objects/kolce.tscn" id="5_eigfp"]
 [ext_resource type="PackedScene" uid="uid://cc2yqfumenit7" path="res://objects/zmiana_poziomu.tscn" id="6_62haa"]
+[ext_resource type="Script" path="res://levels/death.gd" id="8_grha3"]
 
 [sub_resource type="Curve2D" id="Curve2D_m5gwo"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 130, 30, 0, 0, 0, 0, 190, 30, 0, 0, 0, 0, 280, -90)
+"points": PackedVector2Array(0, 0, 0, 0, 20, 0, 0, 0, 0, 0, 40, 0, 0, 0, 0, 0, 130, 10, 0, 0, 0, 0, 190, 10, 0, 0, 0, 0, 280, -90)
 }
 point_count = 5
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8xkbq"]
-texture = ExtResource("3_0hc5d")
+texture = ExtResource("4_mowph")
 texture_region_size = Vector2i(20, 20)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
@@ -28,7 +30,6 @@ texture_region_size = Vector2i(20, 20)
 0:1/0 = 0
 0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
 1:1/0 = 0
-1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
 2:1/0 = 0
 2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
 3:1/0 = 0
@@ -52,7 +53,8 @@ texture_region_size = Vector2i(20, 20)
 
 [sub_resource type="TileSet" id="TileSet_xyrvk"]
 tile_size = Vector2i(20, 20)
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 9
+physics_layer_0/collision_mask = 9
 sources/1 = SubResource("TileSetAtlasSource_8xkbq")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pp4i4"]
@@ -92,10 +94,18 @@ texture_region_size = Vector2i(20, 20)
 
 [sub_resource type="TileSet" id="TileSet_xrht1"]
 tile_size = Vector2i(20, 20)
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 9
+physics_layer_0/collision_mask = 9
 sources/1 = SubResource("TileSetAtlasSource_pp4i4")
 
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8fc75"]
+
 [node name="Main" type="Node2D"]
+script = ExtResource("1_7ryir")
+
+[node name="Zmiana poziomu" parent="." instance=ExtResource("6_62haa")]
+position = Vector2(190, 140)
+next_level = "res://levels/poziom.tscn"
 
 [node name="Player" parent="." instance=ExtResource("2_y7e0g")]
 unique_name_in_owner = true
@@ -103,6 +113,12 @@ position = Vector2(140, 260)
 
 [node name="Kolce" parent="." instance=ExtResource("5_eigfp")]
 position = Vector2(330, 281)
+
+[node name="Kolce2" parent="." instance=ExtResource("5_eigfp")]
+position = Vector2(370, 281)
+
+[node name="Kolce3" parent="." instance=ExtResource("5_eigfp")]
+position = Vector2(350, 281)
 
 [node name="Platforma" parent="." instance=ExtResource("3_ddhsc")]
 position = Vector2(170, 250)
@@ -117,7 +133,7 @@ format = 2
 
 [node name="Piaskowiec" type="TileMapLayer" parent="Level"]
 use_parent_material = true
-tile_map_data = PackedByteArray("AAACAAsAAQADAAAAAAACAAwAAQAAAAEAAAACAA0AAQAAAAEAAAACAA4AAQAAAAEAAAADAAwAAQACAAAAAAADAA0AAQABAAEAAAADAA4AAQABAAEAAAAEAA0AAQABAAAAAAAEAA4AAQABAAEAAAAFAA0AAQACAAAAAAAFAA4AAQABAAEAAAAGAA4AAQABAAAAAAAHAA4AAQABAAAAAAAIAA4AAQABAAAAAAAJAA4AAQABAAAAAAAKAA4AAQACAAAAAAALAA4AAQABAAAAAAAMAA4AAQABAAAAAAANAA4AAQABAAAAAAAOAA4AAQABAAAAAAAPAA4AAQAAAAAAAAAQAA4AAQABAAAAAAARAA4AAQABAAAAAAASAA4AAQABAAAAAAATAA4AAQABAAAAAAAUAA4AAQABAAAAAAAVAA4AAQABAAAAAAAWAA4AAQABAAAAAAAXAA4AAQABAAAAAAAYAA4AAQACAAAAAAAIAAgAAQABAAAAAAAJAAgAAQABAAAAAAAKAAgAAQABAAAAAAALAAgAAQABAAAAAAAMAAgAAQABAAAAAAANAAgAAQABAAAAAAAOAAgAAQABAAAAAAAPAAgAAQABAAAAAAAQAAgAAQABAAAAAAACAA8AAQAAAAEAAAACABAAAQAAAAIAAAADAA8AAQABAAEAAAADABAAAQABAAIAAAAEAA8AAQABAAEAAAAEABAAAQABAAIAAAAFAA8AAQABAAEAAAAFABAAAQABAAIAAAAGAA8AAQABAAEAAAAGABAAAQABAAIAAAAHAA8AAQABAAEAAAAHABAAAQABAAIAAAAIAA8AAQABAAEAAAAIABAAAQABAAIAAAAJAA8AAQABAAEAAAAJABAAAQABAAIAAAAKAA8AAQACAAEAAAAKABAAAQACAAIAAAALAA8AAQABAAEAAAALABAAAQABAAIAAAAMAA8AAQABAAEAAAAMABAAAQABAAIAAAANAA8AAQABAAEAAAANABAAAQABAAIAAAAOAA8AAQABAAEAAAAOABAAAQABAAIAAAAPAA8AAQAAAAEAAAAPABAAAQAAAAIAAAAQAA8AAQABAAEAAAAQABAAAQABAAIAAAARAA8AAQABAAEAAAARABAAAQABAAIAAAASAA8AAQABAAEAAAASABAAAQABAAIAAAATAA8AAQABAAEAAAATABAAAQABAAIAAAAUAA8AAQABAAEAAAAUABAAAQABAAIAAAAVAA8AAQABAAEAAAAVABAAAQABAAIAAAAWAA8AAQABAAEAAAAWABAAAQABAAIAAAAXAA8AAQABAAEAAAAXABAAAQABAAIAAAAYAA8AAQACAAEAAAAYABAAAQACAAIAAAA=")
+tile_map_data = PackedByteArray("AAACAAsAAQADAAAAAAACAAwAAQAAAAEAAAACAA0AAQAAAAEAAAACAA4AAQAAAAEAAAADAAwAAQACAAAAAAADAA0AAQABAAEAAAADAA4AAQABAAEAAAAEAA0AAQABAAAAAAAEAA4AAQABAAEAAAAFAA0AAQACAAAAAAAFAA4AAQABAAEAAAAGAA4AAQABAAAAAAAHAA4AAQABAAAAAAAIAA4AAQABAAAAAAAJAA4AAQABAAAAAAAKAA4AAQACAAAAAAAPAA4AAQAAAAAAAAAQAA4AAQABAAAAAAARAA4AAQABAAAAAAASAA4AAQABAAAAAAATAA4AAQABAAAAAAAUAA4AAQABAAAAAAAVAA4AAQABAAAAAAAWAA4AAQABAAAAAAAXAA4AAQABAAAAAAAYAA4AAQACAAAAAAAIAAgAAQAAAAMAAAAJAAgAAQABAAMAAAAKAAgAAQABAAMAAAALAAgAAQABAAMAAAAMAAgAAQABAAMAAAANAAgAAQABAAMAAAAOAAgAAQABAAMAAAAPAAgAAQABAAMAAAAQAAgAAQACAAMAAAACAA8AAQAAAAEAAAACABAAAQAAAAIAAAADAA8AAQABAAEAAAADABAAAQABAAIAAAAEAA8AAQABAAEAAAAEABAAAQABAAIAAAAFAA8AAQABAAEAAAAFABAAAQABAAIAAAAGAA8AAQABAAEAAAAGABAAAQABAAIAAAAHAA8AAQABAAEAAAAHABAAAQABAAIAAAAIAA8AAQABAAEAAAAIABAAAQABAAIAAAAJAA8AAQABAAEAAAAJABAAAQABAAIAAAAKAA8AAQACAAEAAAAKABAAAQACAAIAAAAPAA8AAQAAAAEAAAAPABAAAQAAAAIAAAAQAA8AAQABAAEAAAAQABAAAQABAAIAAAARAA8AAQABAAEAAAARABAAAQABAAIAAAASAA8AAQABAAEAAAASABAAAQABAAIAAAATAA8AAQABAAEAAAATABAAAQABAAIAAAAUAA8AAQABAAEAAAAUABAAAQABAAIAAAAVAA8AAQABAAEAAAAVABAAAQABAAIAAAAWAA8AAQABAAEAAAAWABAAAQABAAIAAAAXAA8AAQABAAEAAAAXABAAAQABAAIAAAAYAA8AAQACAAEAAAAYABAAAQACAAIAAAA=")
 tile_set = SubResource("TileSet_xyrvk")
 rendering_quadrant_size = 20
 
@@ -128,8 +144,13 @@ rendering_quadrant_size = 20
 
 [node name="Tabliczka" parent="." instance=ExtResource("3_1ueas")]
 position = Vector2(462, 254)
-tablet_type = "nie"
+tablet_type = "slonce"
 
-[node name="Zmiana poziomu" parent="." instance=ExtResource("6_62haa")]
-position = Vector2(190, 150)
-next_level = "res://levels/poziom.tscn"
+[node name="death" type="Area2D" parent="."]
+script = ExtResource("8_grha3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="death"]
+position = Vector2(260, 360)
+shape = SubResource("WorldBoundaryShape2D_8fc75")
+
+[connection signal="body_entered" from="death" to="death" method="_on_body_entered"]

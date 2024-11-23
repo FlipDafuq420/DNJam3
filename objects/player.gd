@@ -3,6 +3,7 @@ extends CharacterBody2D
 @export var speed = 100
 @export var gravity = 200
 @export var jump_power = -100
+var game_over = false
 var face = "default"
 var moving = false
 
@@ -37,4 +38,5 @@ func horizontal_movement():
 	velocity.x = horizontal_input * speed
 
 func kill():
-	get_tree().reload_current_scene()
+	hide()
+	game_over = true
