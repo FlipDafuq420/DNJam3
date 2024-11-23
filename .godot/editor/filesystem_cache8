@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1732386025
+::res://::1732386088
 global.gd::GDScript::-1::1732385738::0::1::::<>Node<>::
 icon.svg::CompressedTexture2D::4408366649361057546::1732378279::1732378284::1::::<><>::
 kostka.gd::GDScript::-1::1732385738::0::1::::<>Node2D<>::
@@ -9,10 +9,11 @@ node_2d.gd::GDScript::-1::1732385738::0::1::::<>Node2D<>::
 ufolud.png::CompressedTexture2D::1349451710109139015::1732367106::1732367460::1::::<><>::
 ::res://Grafiki/::1732385864
 logo.png::CompressedTexture2D::4858667402611613439::1732385859::1732385864::1::::<><>::
-::res://Grafiki/Bloki/::1732385864
+::res://Grafiki/Bloki/::1732388624
 Piasek.png::CompressedTexture2D::1042194128374881918::1732385738::1732385864::1::::<><>::
 Piaskowiec1.png::CompressedTexture2D::1626497506625839755::1732385738::1732385864::1::::<><>::
 Piaskowiec.png::CompressedTexture2D::6143964935046969850::1732367106::1732378284::1::::<><>::
+PiaskowiecLiany.png::CompressedTexture2D::2258633516609330058::1732388624::1732388627::1::::<><>::
 Piaskowiec_nightblock.png::CompressedTexture2D::439443906021932559::1732385859::1732385864::1::::<><>::
 Piaskowiec_noc.png::CompressedTexture2D::6740542168410697388::1732385859::1732385864::1::::<><>::
 ::res://Grafiki/Henryk/::1732385864
@@ -67,29 +68,30 @@ Tabliczka Ruchu1.png::CompressedTexture2D::1820954234134874419::1732385738::1732
 Tabliczka Ruchu2.png::CompressedTexture2D::5913411597473991910::1732385738::1732385864::1::::<><>::
 Tabliczka Słońca1.png::CompressedTexture2D::7992801989952981773::1732385738::1732385864::1::::<><>::
 Tabliczka Słońca2.png::CompressedTexture2D::1188736930418068779::1732385738::1732385864::1::::<><>::
-::res://levels/::1732385952
+::res://levels/::1732387418
 death.gd::GDScript::-1::1732385738::0::1::::<>Area2D<>::
-debug_level.tscn::PackedScene::8363392096849462073::1732385952::0::1::::<><>::res://levels/debug_level.gd<>uid://cc2yqfumenit7::::res://objects/zmiana_poziomu.tscn<>uid://418nh7pidq8k::::res://objects/player.tscn<>uid://dpcmpwxkcu8gl::::res://objects/kolce.tscn<>uid://tg5b081yo42x::::res://objects/platforma.tscn<>uid://xf5f82j4iooh::::res://Grafiki/Bloki/Piaskowiec1.png<>uid://o331xqy8751c::::res://Grafiki/Bloki/Piasek.png<>uid://dtkly4ehyjfiq::::res://objects/tabliczka.tscn<>res://levels/death.gd
+debug_level.tscn::PackedScene::8363392096849462073::1732387418::0::1::::<><>::res://levels/debug_level.gd<>uid://cc2yqfumenit7::::res://objects/zmiana_poziomu.tscn<>uid://418nh7pidq8k::::res://objects/player.tscn<>uid://dpcmpwxkcu8gl::::res://objects/kolce.tscn<>uid://tg5b081yo42x::::res://objects/platforma.tscn<>uid://xf5f82j4iooh::::res://Grafiki/Bloki/Piaskowiec1.png<>uid://o331xqy8751c::::res://Grafiki/Bloki/Piasek.png<>uid://dtkly4ehyjfiq::::res://objects/tabliczka.tscn<>res://levels/death.gd
 kostka.tscn::PackedScene::3826280752611045294::1732385738::0::1::::<><>::res://kostka.gd<>uid://coeqtonh6uvhk::::res://textures/start_block.png<>uid://w0vca41pe5vx::::res://sounds/menuoff.mp3
 menu.tscn::PackedScene::8631831717740311646::1732385859::0::1::::<><>::uid://bys8dwgd7gqog::::res://mmenu.png<>uid://c03qnp36ssqjr::::res://textures/sun.png<>uid://cniqexj8tj55e::::res://textures/play.png<>res://levels/static_body_2d_2.gd<>uid://burqjxooglj5w::::res://levels/kostka.tscn<>uid://dsk2g7pynyoj0::::res://textures/stop.png<>uid://dek2n44gikr2h::::res://sounds/menutheme.mp3<>uid://d0vg5r118q8t6::::res://textures/go.png<>uid://egdyk536pgt8::::res://textures/no.png<>uid://cbhtso4awmhkp::::res://Grafiki/logo.png
 poziom1n.tscn::PackedScene::-1::1732385859::0::1::::<><>::
 poziom.gd::GDScript::-1::1732385738::0::1::::<>Node2D<>::
 poziom.tscn::PackedScene::4629703996848271805::1732385859::0::1::::<><>::res://levels/poziom.gd<>uid://418nh7pidq8k::::res://objects/player.tscn<>uid://dtkly4ehyjfiq::::res://objects/tabliczka.tscn<>uid://tg5b081yo42x::::res://objects/platforma.tscn<>uid://cdxgkr2p7edo4::::res://Grafiki/Bloki/Piaskowiec1.png<>uid://o331xqy8751c::::res://Grafiki/Bloki/Piasek.png<>uid://dpcmpwxkcu8gl::::res://objects/kolce.tscn<>uid://cc2yqfumenit7::::res://objects/zmiana_poziomu.tscn<>res://levels/death.gd
+debug_level.gd::GDScript::-1::1732386312::0::1::::<>Node2D<>::
 rigid_body_2d.gd::GDScript::-1::1732385738::0::1::::<>RigidBody2D<>::
 static_body_2d_2.gd::GDScript::-1::1732385738::0::1::::<>StaticBody2D<>::
-::res://objects/::1732386016
+::res://objects/::1732387418
 kolce.gd::GDScript::-1::1732385738::0::1::::<>Path2D<>::
-kolce.tscn::PackedScene::8216980043481735579::1732386015::0::1::::<><>::res://objects/kolce.gd<>uid://dytbamsxhbj3c::::res://Grafiki/Obiekty/Kolce1.png
+kolce.tscn::PackedScene::8216980043481735579::1732387418::0::1::::<><>::res://objects/kolce.gd<>uid://dytbamsxhbj3c::::res://Grafiki/Obiekty/Kolce1.png
 platforma.gd::GDScript::-1::1732385738::0::1::::<>Path2D<>::
-platforma.tscn::PackedScene::1347798956500149905::1732386015::0::1::::<><>::res://objects/platforma.gd<>uid://xf5f82j4iooh::::res://Grafiki/Bloki/Piaskowiec1.png
-player.gd::GDScript::-1::1732385738::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::2091177580980102180::1732386015::0::1::::<><>::res://objects/player.gd<>uid://deuve1itsup8g::::res://textures/temp/Main_Character/Walking.tres
-tabliczka.gd::GDScript::-1::1732385738::0::1::::<>StaticBody2D<>::
-tabliczka.tscn::PackedScene::8514206133423516508::1732386015::0::1::::<><>::uid://wsbgyneaun5k::::res://textures/ufolud/ufolud.jpg<>res://objects/tabliczka.gd<>uid://c6ohtxd66pd8r::::res://Grafiki/Obiekty/Tabliczka Nie1.png<>uid://cxwuqkdnsbuis::::res://Grafiki/Obiekty/Tabliczka Nie2.png<>uid://07c3526pndx8::::res://Grafiki/Obiekty/Tabliczka Ruchu1.png<>uid://cqira37togass::::res://Grafiki/Obiekty/Tabliczka Ruchu2.png<>uid://dl41js343qowj::::res://Grafiki/Obiekty/Tabliczka Słońca1.png<>uid://q63labqxt0d0::::res://Grafiki/Obiekty/Tabliczka Słońca2.png
+platforma.tscn::PackedScene::1347798956500149905::1732387418::0::1::::<><>::res://objects/platforma.gd<>uid://xf5f82j4iooh::::res://Grafiki/Bloki/Piaskowiec1.png
+player.gd::GDScript::-1::1732387119::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::2091177580980102180::1732387418::0::1::::<><>::res://objects/player.gd<>uid://deuve1itsup8g::::res://textures/temp/Main_Character/Walking.tres
+tabliczka.gd::GDScript::-1::1732387418::0::1::::<>StaticBody2D<>::
+tabliczka.tscn::PackedScene::8514206133423516508::1732387418::0::1::::<><>::uid://wsbgyneaun5k::::res://textures/ufolud/ufolud.jpg<>res://objects/tabliczka.gd<>uid://c6ohtxd66pd8r::::res://Grafiki/Obiekty/Tabliczka Nie1.png<>uid://cxwuqkdnsbuis::::res://Grafiki/Obiekty/Tabliczka Nie2.png<>uid://07c3526pndx8::::res://Grafiki/Obiekty/Tabliczka Ruchu1.png<>uid://cqira37togass::::res://Grafiki/Obiekty/Tabliczka Ruchu2.png<>uid://dl41js343qowj::::res://Grafiki/Obiekty/Tabliczka Słońca1.png<>uid://q63labqxt0d0::::res://Grafiki/Obiekty/Tabliczka Słońca2.png
 wtyczka.gd::GDScript::-1::1732385914::0::1::::<>Area2D<>::
-Wtyczka.tscn::PackedScene::7533247513589105766::1732386016::0::1::::<><>::res://objects/wtyczka.gd<>uid://dpxi0b3wadsks::::res://textures/temp/tablets/call_front.png
+Wtyczka.tscn::PackedScene::7533247513589105766::1732387418::0::1::::<><>::res://objects/wtyczka.gd<>uid://dpxi0b3wadsks::::res://textures/temp/tablets/call_front.png
 zmiana_poziomu.gd::GDScript::-1::1732385738::0::1::::<>Area2D<>::
-zmiana_poziomu.tscn::PackedScene::4970443328614684654::1732386015::0::1::::<><>::res://objects/zmiana_poziomu.gd<>uid://8ehpnxds3gll::::res://Grafiki/Obiekty/Przejście1.png
+zmiana_poziomu.tscn::PackedScene::4970443328614684654::1732387418::0::1::::<><>::res://objects/zmiana_poziomu.gd<>uid://8ehpnxds3gll::::res://Grafiki/Obiekty/Przejście1.png
 ::res://Scripts/::1732385859
 alter.gd::GDScript::-1::1732385859::0::1::::<>RefCounted<>::
 ::res://Scripts/Main_Character/::1732367459

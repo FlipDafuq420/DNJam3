@@ -1,7 +1,7 @@
 extends StaticBody2D
 
 @export var tablet_type = "default"
-@export var gravity = 0.3
+@export var gravity = 100
 var reachable = false
 var locked = false
 var locked_source
@@ -19,6 +19,7 @@ func _ready() -> void:
 			$AnimatedSprite2D.animation = "ruch"
 		"default":
 			$AnimatedSprite2D.animation = "default"
+	velocity.y += gravity
 
 func _input(event):
 	if event.get_action_strength("Interact") and reachable and !locked and interact_source != null:
@@ -30,8 +31,8 @@ func _input(event):
 
 func _physics_process(delta: float) -> void:
 	if !locked:
-		velocity.y += gravity * delta
-		move_and_collide(velocity)
+		move_and_collide(velocity * delta)
+
 		
 func _process(delta: float) -> void:
 	if locked:
@@ -39,7 +40,6 @@ func _process(delta: float) -> void:
 		position = locked_position
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	print_debug(body.get_node("HoldPoint"))
 	if body.name == "Player":
 		interact_source = body
 		reachable = true

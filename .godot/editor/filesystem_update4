@@ -6,3 +6,5 @@ res://objects/zmiana_poziomu.tscn
 res://objects/Wtyczka.tscn
 res://levels/debug_level.tscn
 res://levels/debug_level.gd
+res://objects/tabliczka.gd
+res://objects/player.gd

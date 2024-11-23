@@ -40,3 +40,5 @@ func horizontal_movement():
 func kill():
 	hide()
 	game_over = true
+func return_velocity() -> Vector2:
+	return velocity
