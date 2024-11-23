@@ -2,10 +2,4 @@ res://levels/poziom.tscn
 res://objects/player.tscn
 res://objects/tabliczka.tscn
 res://objects/kolce.tscn
-res://objects/platforma.tscn
 res://objects/zmiana_poziomu.tscn
-res://objects/player.gd
-res://levels/death.gd
-res://objects/platforma.gd
-res://objects/tabliczka.gd
-res://textures/temp/Main_Character/Walking.tres

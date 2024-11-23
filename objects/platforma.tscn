@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://tg5b081yo42x"]
 
-[ext_resource type="Texture2D" uid="uid://ctsgg714lpkw5" path="res://Grafiki/Bloki/Piaskowiec.png" id="1_6ma43"]
 [ext_resource type="Script" path="res://objects/platforma.gd" id="1_at4g1"]
+[ext_resource type="Texture2D" uid="uid://cdxgkr2p7edo4" path="res://Grafiki/Bloki/Piaskowiec1.png" id="2_7sw2c"]
 
 [sub_resource type="Curve2D" id="Curve2D_sq3l7"]
 _data = {
@@ -10,7 +10,7 @@ _data = {
 point_count = 2
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ft3hb"]
-texture = ExtResource("1_6ma43")
+texture = ExtResource("2_7sw2c")
 texture_region_size = Vector2i(20, 20)
 0:0/0 = 0
 0:1/0 = 0
