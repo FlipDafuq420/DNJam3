@@ -21,3 +21,6 @@ func horizontal_movement():
 	var horizontal_input = Input.get_action_strength("move_right") - Input.get_action_strength("move_left")
 	
 	velocity.x = horizontal_input * speed
+
+func kill():
+	get_tree().reload_current_scene()
