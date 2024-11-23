@@ -1,16 +1,6 @@
-res://levels/player.tscn
-res://textures/temp/Main_Character/Walking.tres
 res://levels/poziom.tscn
-res://levels/tabliczka.tscn
-res://levels/kolce.tscn
-res://levels/platforma.tscn
-res://objects/zmiana_poziomu.gd
-res://objects/zmiana_poziomu.tscn
 res://objects/player.tscn
 res://objects/tabliczka.tscn
 res://objects/kolce.tscn
 res://objects/platforma.tscn
-res://objects/kolce.gd
-res://objects/platforma.gd
-res://objects/tabliczka.gd
-res://objects/player.gd
+res://objects/zmiana_poziomu.tscn
