@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxgbqc0nhq0wu"
-path="res://.godot/imported/mmenu.png-d834101aeb289825bf5dedb23827a912.ctex"
+uid="uid://dl41js343qowj"
+path="res://.godot/imported/Tabliczka Słońca1.png-62ee4407e233113d5d277adaaf4238cf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mmenu.png"
-dest_files=["res://.godot/imported/mmenu.png-d834101aeb289825bf5dedb23827a912.ctex"]
+source_file="res://Grafiki/Obiekty/Tabliczka Słońca1.png"
+dest_files=["res://.godot/imported/Tabliczka Słońca1.png-62ee4407e233113d5d277adaaf4238cf.ctex"]
 
 [params]
 

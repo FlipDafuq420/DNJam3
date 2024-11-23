@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxgbqc0nhq0wu"
-path="res://.godot/imported/mmenu.png-d834101aeb289825bf5dedb23827a912.ctex"
+uid="uid://dsk2g7pynyoj0"
+path="res://.godot/imported/stop.png-0115d3195f695be09cdb114864a5a161.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mmenu.png"
-dest_files=["res://.godot/imported/mmenu.png-d834101aeb289825bf5dedb23827a912.ctex"]
+source_file="res://textures/stop.png"
+dest_files=["res://.godot/imported/stop.png-0115d3195f695be09cdb114864a5a161.ctex"]
 
 [params]
 

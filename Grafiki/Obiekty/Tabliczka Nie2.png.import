@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxgbqc0nhq0wu"
-path="res://.godot/imported/mmenu.png-d834101aeb289825bf5dedb23827a912.ctex"
+uid="uid://cxwuqkdnsbuis"
+path="res://.godot/imported/Tabliczka Nie2.png-3efba6e69ea6c16622d068c09e2afdd2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://mmenu.png"
-dest_files=["res://.godot/imported/mmenu.png-d834101aeb289825bf5dedb23827a912.ctex"]
+source_file="res://Grafiki/Obiekty/Tabliczka Nie2.png"
+dest_files=["res://.godot/imported/Tabliczka Nie2.png-3efba6e69ea6c16622d068c09e2afdd2.ctex"]
 
 [params]
 

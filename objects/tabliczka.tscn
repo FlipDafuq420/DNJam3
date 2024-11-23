@@ -1,0 +1,79 @@
+[gd_scene load_steps=11 format=3 uid="uid://dtkly4ehyjfiq"]
+
+[ext_resource type="Texture2D" uid="uid://wsbgyneaun5k" path="res://textures/ufolud/ufolud.jpg" id="1_fpcio"]
+[ext_resource type="Script" path="res://objects/tabliczka.gd" id="1_qfwwy"]
+[ext_resource type="Texture2D" uid="uid://c6ohtxd66pd8r" path="res://Grafiki/Obiekty/Tabliczka Nie1.png" id="3_bcdjw"]
+[ext_resource type="Texture2D" uid="uid://cxwuqkdnsbuis" path="res://Grafiki/Obiekty/Tabliczka Nie2.png" id="4_cguji"]
+[ext_resource type="Texture2D" uid="uid://07c3526pndx8" path="res://Grafiki/Obiekty/Tabliczka Ruchu1.png" id="5_so1d8"]
+[ext_resource type="Texture2D" uid="uid://cqira37togass" path="res://Grafiki/Obiekty/Tabliczka Ruchu2.png" id="6_7dc5h"]
+[ext_resource type="Texture2D" uid="uid://dl41js343qowj" path="res://Grafiki/Obiekty/Tabliczka Słońca1.png" id="7_yn5i8"]
+[ext_resource type="Texture2D" uid="uid://q63labqxt0d0" path="res://Grafiki/Obiekty/Tabliczka Słońca2.png" id="8_7swac"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ayqi7"]
+size = Vector2(15, 15)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cq1vp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fpcio")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_bcdjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cguji")
+}],
+"loop": true,
+"name": &"nie",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_so1d8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7dc5h")
+}],
+"loop": true,
+"name": &"ruch",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_yn5i8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7swac")
+}],
+"loop": true,
+"name": &"slonce",
+"speed": 5.0
+}]
+
+[node name="Tabliczka" type="StaticBody2D"]
+collision_layer = 8
+collision_mask = 8
+script = ExtResource("1_qfwwy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ayqi7")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_cq1vp")
+autoplay = "default"
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_ayqi7")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

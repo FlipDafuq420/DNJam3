@@ -1,10 +1,12 @@
-extends Area2D
+extends StaticBody2D
 
+@export var tablet_type = "default"
+@export var gravity = 0.3
 var reachable = false
 var locked = false
 var locked_source
 var interact_source
-@export var tablet_type = "default"
+var velocity = Vector2(Vector2.ZERO)
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -26,19 +28,23 @@ func _input(event):
 		locked = false;
 		locked_source = null
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _physics_process(delta: float) -> void:
+	if !locked:
+		velocity.y += gravity * delta
+		move_and_collide(velocity)
+		
 func _process(delta: float) -> void:
 	if locked:
-		var locked_position = locked_source.position
-		locked_position.y -= 25
+		var locked_position = locked_source.get_node("HoldPoint").global_position
 		position = locked_position
-		
-	
-func _on_body_entered(body: Node2D) -> void:
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	print_debug(body.get_node("HoldPoint"))
 	if body.name == "Player":
 		interact_source = body
 		reachable = true
 
-func _on_body_exited(body: Node2D) -> void:
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
 	interact_source = null
 	reachable = false
