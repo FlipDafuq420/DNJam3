@@ -24,7 +24,7 @@ func _process(delta):
 		if start:
 			
 			await get_tree().create_timer(3).timeout
-			get_tree().change_scene_to_file("res://levels/first.tscn")
+			get_tree().change_scene_to_file("res://levels/poziom.tscn")
 		else:
 			
 			await get_tree().create_timer(3).timeout

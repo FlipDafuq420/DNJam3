@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c474lnid0jpna"]
 
-[ext_resource type="Texture2D" uid="uid://bx1hj1ofas635" path="res://textures/temp/tablets/insert.png" id="1_be222"]
 [ext_resource type="Script" path="res://objects/wtyczka.gd" id="1_d0bcw"]
+[ext_resource type="Texture2D" uid="uid://xuq6w34xuf36" path="res://Grafiki/Dziura1.png" id="2_qflnh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mjqf6"]
 size = Vector2(15, 32.6563)
@@ -12,7 +12,7 @@ collision_mask = 48
 script = ExtResource("1_d0bcw")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_be222")
+texture = ExtResource("2_qflnh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -8.67188)
