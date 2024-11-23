@@ -1,10 +1,10 @@
 [gd_scene load_steps=9 format=4 uid="uid://b67wsv8dhn334"]
 
-[ext_resource type="PackedScene" uid="uid://418nh7pidq8k" path="res://levels/player.tscn" id="2_y7e0g"]
+[ext_resource type="PackedScene" uid="uid://418nh7pidq8k" path="res://objects/player.tscn" id="2_y7e0g"]
 [ext_resource type="Texture2D" uid="uid://ctsgg714lpkw5" path="res://Grafiki/Bloki/Piaskowiec.png" id="3_0hc5d"]
-[ext_resource type="PackedScene" uid="uid://dtkly4ehyjfiq" path="res://levels/tabliczka.tscn" id="3_1ueas"]
-[ext_resource type="PackedScene" uid="uid://tg5b081yo42x" path="res://levels/platforma.tscn" id="3_ddhsc"]
-[ext_resource type="PackedScene" uid="uid://dpcmpwxkcu8gl" path="res://levels/kolce.tscn" id="5_eigfp"]
+[ext_resource type="PackedScene" uid="uid://dtkly4ehyjfiq" path="res://objects/tabliczka.tscn" id="3_1ueas"]
+[ext_resource type="PackedScene" uid="uid://tg5b081yo42x" path="res://objects/platforma.tscn" id="3_ddhsc"]
+[ext_resource type="PackedScene" uid="uid://dpcmpwxkcu8gl" path="res://objects/kolce.tscn" id="5_eigfp"]
 
 [sub_resource type="Curve2D" id="Curve2D_m5gwo"]
 _data = {

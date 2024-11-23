@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://dpcmpwxkcu8gl"]
 
-[ext_resource type="Script" path="res://levels/kolce.gd" id="1_o8j2a"]
+[ext_resource type="Script" path="res://objects/kolce.gd" id="1_o8j2a"]
 [ext_resource type="Texture2D" uid="uid://dytbamsxhbj3c" path="res://Grafiki/Obiekty/Kolce1.png" id="2_xbswp"]
 
 [sub_resource type="Curve2D" id="Curve2D_olbrk"]

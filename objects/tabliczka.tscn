@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://dtkly4ehyjfiq"]
 
 [ext_resource type="Texture2D" uid="uid://wsbgyneaun5k" path="res://textures/ufolud/ufolud.jpg" id="1_fpcio"]
-[ext_resource type="Script" path="res://levels/tabliczka.gd" id="1_qfwwy"]
+[ext_resource type="Script" path="res://objects/tabliczka.gd" id="1_qfwwy"]
 [ext_resource type="Texture2D" uid="uid://c6ohtxd66pd8r" path="res://Grafiki/Obiekty/Tabliczka Nie1.png" id="3_bcdjw"]
 [ext_resource type="Texture2D" uid="uid://cxwuqkdnsbuis" path="res://Grafiki/Obiekty/Tabliczka Nie2.png" id="4_cguji"]
 [ext_resource type="Texture2D" uid="uid://07c3526pndx8" path="res://Grafiki/Obiekty/Tabliczka Ruchu1.png" id="5_so1d8"]
