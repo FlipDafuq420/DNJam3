@@ -1,7 +1,0 @@
-CollisionShape2D
-Area2D
-Sprite2D
-ColorRect
-StaticBody2D
-RigidBody2D
-PhysicalBone2D

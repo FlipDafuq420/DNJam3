@@ -1,8 +1,3 @@
 res://levels/poziom.tscn
 res://levels/menu.tscn
-res://levels/player.tscn
-res://levels/rigid_body_2d.gd
-res://global.gd
-res://levels/static_body_2d_2.gd
-res://kostka.gd
 res://levels/kostka.tscn
