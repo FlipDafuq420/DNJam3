@@ -15,10 +15,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	if extended and path.progress_ratio > 0:
-		print_debug("a")
 		path.progress -= speed * delta
 	if !extended and path.progress_ratio < 1:
-		print_debug()
 		path.progress += speed * delta
 
 func _on_timer_timeout() -> void:
