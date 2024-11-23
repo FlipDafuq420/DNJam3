@@ -32,7 +32,6 @@ func _physics_process(delta: float):
 func _input(event):
 	if event.is_action_pressed("jump") and is_on_floor():
 		velocity.y = jump_power;
-		
 
 func horizontal_movement():
 	

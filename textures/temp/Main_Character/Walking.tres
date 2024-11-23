@@ -1,5 +1,6 @@
 [gd_resource type="SpriteFrames" load_steps=29 format=3 uid="uid://deuve1itsup8g"]
 
+
 [ext_resource type="Texture2D" uid="uid://dwtfeuksnhif6" path="res://Grafiki/Henryk/Henryk Lewo.png" id="1_2uukg"]
 [ext_resource type="Texture2D" uid="uid://bhcj2057my5mm" path="res://Grafiki/Henryk/Henryk.png" id="1_k27gy"]
 [ext_resource type="Texture2D" uid="uid://okoq7wib6dtf" path="res://Grafiki/Henryk/Henryk Prawo.png" id="1_v1ixb"]
