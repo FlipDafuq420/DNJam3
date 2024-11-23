@@ -1,10 +1,13 @@
-[gd_scene load_steps=8 format=3 uid="uid://dtkly4ehyjfiq"]
+[gd_scene load_steps=11 format=3 uid="uid://dtkly4ehyjfiq"]
 
 [ext_resource type="Texture2D" uid="uid://wsbgyneaun5k" path="res://textures/ufolud/ufolud.jpg" id="1_fpcio"]
 [ext_resource type="Script" path="res://levels/tabliczka.gd" id="1_qfwwy"]
-[ext_resource type="Texture2D" uid="uid://bhkcbdi5nxvfd" path="res://textures/temp/tablets/nie.png" id="3_hfeak"]
-[ext_resource type="Texture2D" uid="uid://ynpuhr2m7k3n" path="res://textures/temp/tablets/ruch.png" id="4_dclyn"]
-[ext_resource type="Texture2D" uid="uid://dcrkcfpykohx3" path="res://textures/temp/tablets/slonce.png" id="5_po251"]
+[ext_resource type="Texture2D" uid="uid://widmlan2qvpc" path="res://Grafiki/Obiekty/Tabliczka Nie1.png" id="3_bcdjw"]
+[ext_resource type="Texture2D" uid="uid://dodexlbnyq4fb" path="res://Grafiki/Obiekty/Tabliczka Nie2.png" id="4_cguji"]
+[ext_resource type="Texture2D" uid="uid://b57mqwjw7l3ft" path="res://Grafiki/Obiekty/Tabliczka Ruchu1.png" id="5_so1d8"]
+[ext_resource type="Texture2D" uid="uid://costos5fr247p" path="res://Grafiki/Obiekty/Tabliczka Ruchu2.png" id="6_7dc5h"]
+[ext_resource type="Texture2D" uid="uid://c3eejdh0i2k6h" path="res://Grafiki/Obiekty/Tabliczka Słońca1.png" id="7_yn5i8"]
+[ext_resource type="Texture2D" uid="uid://cr0gn1hftgou3" path="res://Grafiki/Obiekty/Tabliczka Słońca2.png" id="8_7swac"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cq1vp"]
 animations = [{
@@ -18,7 +21,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("3_hfeak")
+"texture": ExtResource("3_bcdjw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_cguji")
 }],
 "loop": true,
 "name": &"nie",
@@ -26,7 +32,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_dclyn")
+"texture": ExtResource("5_so1d8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_7dc5h")
 }],
 "loop": true,
 "name": &"ruch",
@@ -34,7 +43,10 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("5_po251")
+"texture": ExtResource("7_yn5i8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_7swac")
 }],
 "loop": true,
 "name": &"slonce",
@@ -51,7 +63,7 @@ script = ExtResource("1_qfwwy")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_cq1vp")
-animation = &"slonce"
+autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_ayqi7")

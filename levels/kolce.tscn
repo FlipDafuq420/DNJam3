@@ -1,16 +1,16 @@
 [gd_scene load_steps=8 format=3 uid="uid://dpcmpwxkcu8gl"]
 
-[ext_resource type="Texture2D" uid="uid://cfnbjvm4c1dn8" path="res://textures/temp/terrain/blok.png" id="1_he5ed"]
 [ext_resource type="Script" path="res://levels/kolce.gd" id="1_o8j2a"]
+[ext_resource type="Texture2D" uid="uid://b8vr3lovtwchr" path="res://Grafiki/Obiekty/Kolce1.png" id="2_xbswp"]
 
 [sub_resource type="Curve2D" id="Curve2D_olbrk"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, -3)
+"points": PackedVector2Array(0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, -12)
 }
 point_count = 2
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_440hh"]
-size = Vector2(18, 7)
+size = Vector2(20, 14.5)
 
 [sub_resource type="Animation" id="Animation_0x4m8"]
 resource_name = "Extend"
@@ -65,13 +65,12 @@ collision_layer = 4
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody/Area2D"]
-position = Vector2(0, 3.5)
+position = Vector2(0, 8.25)
 shape = SubResource("RectangleShape2D_440hh")
 
 [node name="Sprite2D" type="Sprite2D" parent="AnimatableBody/Area2D"]
-position = Vector2(-4.76837e-07, 3.5)
-scale = Vector2(0.9, 0.35)
-texture = ExtResource("1_he5ed")
+position = Vector2(0, 8)
+texture = ExtResource("2_xbswp")
 
 [node name="PathFollow2D" type="PathFollow2D" parent="."]
 position = Vector2(0, 4)

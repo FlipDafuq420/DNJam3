@@ -107,4 +107,4 @@ rendering_quadrant_size = 20
 
 [node name="Tabliczka" parent="." instance=ExtResource("3_1ueas")]
 position = Vector2(462, 254)
-tablet_type = "nie"
+tablet_type = "slonce"
