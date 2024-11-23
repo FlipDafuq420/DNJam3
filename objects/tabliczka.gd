@@ -1,14 +1,10 @@
 extends StaticBody2D
 
 @export var tablet_type = "default"
-@export var gravity = 0.3
+@export var gravity = 100
 var reachable = false
 var locked = false
-<<<<<<< Updated upstream
-var inserted = false
-=======
 var near_insert = false
->>>>>>> Stashed changes
 var locked_source
 var interact_source
 var velocity = Vector2(Vector2.ZERO)
@@ -24,29 +20,20 @@ func _ready() -> void:
 			$AnimatedSprite2D.animation = "ruch"
 		"default":
 			$AnimatedSprite2D.animation = "default"
+	velocity.y += gravity
 
 func _input(event):
-<<<<<<< Updated upstream
-	if !inserted:
-		if event.get_action_strength("Interact") and reachable and !locked and interact_source != null:
-			locked = true
-			locked_source = interact_source
-		elif event.get_action_strength("Interact") and locked:
-			locked = false;
-			locked_source = null
-=======
 	if event.get_action_strength("Interact") and reachable and !locked and interact_source != null:
 		locked = true
 		locked_source = interact_source
 	elif event.get_action_strength("Interact") and locked and !near_insert:
 		locked = false;
 		locked_source = null
->>>>>>> Stashed changes
 
 func _physics_process(delta: float) -> void:
-	if !locked and !inserted:
-		velocity.y += gravity * delta
-		move_and_collide(velocity)
+	if !locked:
+		move_and_collide(velocity * delta)
+
 		
 #func _process(delta: float) -> void:
 	#if locked:
@@ -56,8 +43,9 @@ func _physics_process(delta: float) -> void:
 		#position = locked_position
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	print_debug(body.get_node("HoldPoint"))
- 
+	if body.name == "Player":
+		interact_source = body
+		reachable = true
 
 
 func _on_area_2d_body_exited(body: Node2D) -> void:

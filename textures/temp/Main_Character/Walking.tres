@@ -1,7 +1,7 @@
 [gd_resource type="SpriteFrames" load_steps=15 format=3 uid="uid://deuve1itsup8g"]
 
 [ext_resource type="Texture2D" uid="uid://okoq7wib6dtf" path="res://Grafiki/Henryk/Henryk Prawo.png" id="1_v1ixb"]
-[ext_resource type="Texture2D" uid="uid://bn1w2hd8a1vti" path="res://Grafiki/Henryk/Henryk Skok.png" id="3_m5y5y"]
+[ext_resource type="Texture2D" uid="uid://ckyn2wxhhrr2m" path="res://Grafiki/Henryk/Henryk Skok.png" id="3_m5y5y"]
 [ext_resource type="Texture2D" uid="uid://mhq0xxjtp8y2" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo1.png" id="12_h03k5"]
 [ext_resource type="Texture2D" uid="uid://b2ft2s0imbb5y" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo2.png" id="13_h5y1b"]
 [ext_resource type="Texture2D" uid="uid://b74h26abwrfur" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo3.png" id="14_42ok2"]
@@ -12,8 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://wfe6f731kc6t" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo8.png" id="19_ji2gr"]
 [ext_resource type="Texture2D" uid="uid://bvni3rwgbtr1a" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo9.png" id="20_6nhw4"]
 [ext_resource type="Texture2D" uid="uid://b3a2boj4ui7un" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo10.png" id="21_t8c7g"]
-[ext_resource type="Texture2D" uid="uid://ci0c8uae16okl" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo11.png" id="26_f3276"]
-[ext_resource type="Texture2D" uid="uid://bqq22sxh733hr" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo12.png" id="27_hmcds"]
+[ext_resource type="Texture2D" uid="uid://cp2jlkds5der0" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo11.png" id="26_f3276"]
+[ext_resource type="Texture2D" uid="uid://et8shtp8pcfw" path="res://Grafiki/Henryk/Henryk Ruch Prawo/Henryk Ruch Prawo12.png" id="27_hmcds"]
 
 [resource]
 animations = [{
