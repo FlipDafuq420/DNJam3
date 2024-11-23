@@ -8,3 +8,4 @@ res://objects/player.gd
 res://levels/death.gd
 res://objects/platforma.gd
 res://objects/tabliczka.gd
+res://textures/temp/Main_Character/Walking.tres

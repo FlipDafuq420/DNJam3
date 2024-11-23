@@ -1,9 +1,9 @@
 [gd_scene load_steps=15 format=4 uid="uid://b67wsv8dhn334"]
 
 [ext_resource type="PackedScene" uid="uid://418nh7pidq8k" path="res://objects/player.tscn" id="2_y7e0g"]
-[ext_resource type="Texture2D" uid="uid://ctsgg714lpkw5" path="res://Grafiki/Bloki/Piaskowiec.png" id="3_0hc5d"]
 [ext_resource type="PackedScene" uid="uid://dtkly4ehyjfiq" path="res://objects/tabliczka.tscn" id="3_1ueas"]
 [ext_resource type="PackedScene" uid="uid://tg5b081yo42x" path="res://objects/platforma.tscn" id="3_ddhsc"]
+[ext_resource type="Texture2D" uid="uid://cdxgkr2p7edo4" path="res://Grafiki/Bloki/Piaskowiec1.png" id="4_mowph"]
 [ext_resource type="Texture2D" uid="uid://o331xqy8751c" path="res://Grafiki/Bloki/Piasek.png" id="5_65bjk"]
 [ext_resource type="PackedScene" uid="uid://dpcmpwxkcu8gl" path="res://objects/kolce.tscn" id="5_eigfp"]
 [ext_resource type="PackedScene" uid="uid://cc2yqfumenit7" path="res://objects/zmiana_poziomu.tscn" id="6_62haa"]
@@ -16,7 +16,7 @@ _data = {
 point_count = 5
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8xkbq"]
-texture = ExtResource("3_0hc5d")
+texture = ExtResource("4_mowph")
 texture_region_size = Vector2i(20, 20)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
