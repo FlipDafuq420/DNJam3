@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://bmcmiduo4bhf0"]
+[gd_scene load_steps=27 format=4 uid="uid://bmcmiduo4bhf0"]
 
 [ext_resource type="Script" path="res://levels/level.gd" id="1_0xf8a"]
 [ext_resource type="Texture2D" uid="uid://jmmxri2migyr" path="res://textures/bg/bgd2.png" id="2_syb73"]
@@ -14,6 +14,7 @@
 [ext_resource type="Script" path="res://levels/death.gd" id="9_76x43"]
 [ext_resource type="Texture2D" uid="uid://dh7jmvfbw7kxl" path="res://textures/nocblok.png" id="10_8prvr"]
 [ext_resource type="Texture2D" uid="uid://bhqtyfk64c6tj" path="res://textures/dzienblock.png" id="11_uer7k"]
+[ext_resource type="AudioStream" uid="uid://ya5bhqqfp2gx" path="res://sounds/Those who were here before us.mp3" id="16_tr0r0"]
 [ext_resource type="Texture2D" uid="uid://cfnbjvm4c1dn8" path="res://textures/temp/terrain/blok.png" id="17_r4r6d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5lbws"]
@@ -88,7 +89,8 @@ texture_region_size = Vector2i(20, 20)
 
 [sub_resource type="TileSet" id="TileSet_3uqmv"]
 tile_size = Vector2i(20, 20)
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 9
+physics_layer_0/collision_mask = 9
 sources/0 = SubResource("TileSetAtlasSource_5lbws")
 sources/1 = SubResource("TileSetAtlasSource_jfwoa")
 
@@ -142,7 +144,7 @@ texture = ExtResource("2_syb73")
 
 [node name="Zmiana poziomu" parent="." instance=ExtResource("3_tai3j")]
 position = Vector2(70, 100)
-next_level = "res://levels/learn ruchome.tscn"
+next_level = "res://levels/testum.tscn"
 
 [node name="Dziura1" type="Sprite2D" parent="."]
 modulate = Color(0.737255, 0.501961, 0.419608, 1)
@@ -205,5 +207,10 @@ tile_set = SubResource("TileSet_0tvss")
 rendering_quadrant_size = 20
 format = 2
 layer_0/tile_data = PackedInt32Array(917514, 1, 0, 917513, 1, 0, 917512, 1, 0)
+
+[node name="gametheme" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("16_tr0r0")
+autoplay = true
+parameters/looping = true
 
 [connection signal="body_entered" from="death" to="death" method="_on_body_entered"]

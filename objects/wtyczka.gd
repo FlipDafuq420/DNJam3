@@ -68,6 +68,9 @@ func inserted():
 			get_tree().current_scene.change_time()
 		"nie":
 			get_tree().current_scene.toggle_moving(true)
+		"ruch":
+			get_tree().current_scene.toggle_moving(true)
+			print("AAAAAAAAAAAAaa")
 	
 func taken_out():
 	match held_item.tablet_type:
@@ -76,3 +79,6 @@ func taken_out():
 			get_tree().current_scene.change_time()
 		"nie":
 			get_tree().current_scene.toggle_moving(false)
+		"ruch":
+			get_tree().current_scene.toggle_moving(false)
+			print("BBBBBBBBBBB")
