@@ -36,3 +36,7 @@ func change_time():
 func toggle_moving(state: bool):
 	for movable in movableNodes:
 		movable.stop = state
+		
+func _input(event: InputEvent) -> void:
+	if event.get_action_strength("Quit"):
+		get_tree().quit()
