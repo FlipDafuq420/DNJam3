@@ -30,6 +30,7 @@ func _input(event: InputEvent) -> void:
 		held_item = interact_source
 		held_item.locked = true
 		held_item.inserted = true
+		%Player.holding = false
 		held_item.locked_source = $"."
 		held_item.sprite.animation = "in_" + held_item.tablet_type
 		reachable = false

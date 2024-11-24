@@ -6,6 +6,7 @@ extends CharacterBody2D
 var game_over = false
 var face = "default"
 var moving = false
+var holding = false
 
 func _physics_process(delta: float):
 	

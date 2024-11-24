@@ -31,10 +31,12 @@ func _ready() -> void:
 	velocity.y += gravity
 
 func _input(event):
-	if event.get_action_strength("Interact") and reachable and !locked and interact_source != null:
+	if event.get_action_strength("Interact") and reachable and !locked and interact_source != null and !interact_source.holding:
+		%Player.holding = true
 		locked = true
 		locked_source = interact_source
 	elif event.get_action_strength("Interact") and locked and !near_insert and !inserted:
+		%Player.holding = false
 		locked = false;
 		locked_source = null
 
