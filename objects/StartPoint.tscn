@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://l4h3h4127kh8"]
+
+[ext_resource type="Texture2D" uid="uid://c542rp5dc3lem" path="res://Grafiki/Start1.png" id="1_10qs8"]
+
+[node name="StartPoint" type="Sprite2D"]
+texture = ExtResource("1_10qs8")
+
+[node name="pos" type="Marker2D" parent="."]
+position = Vector2(1, 5)

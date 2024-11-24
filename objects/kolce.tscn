@@ -10,7 +10,8 @@ _data = {
 point_count = 3
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6rgwe"]
-height = 22.0
+radius = 8.0
+height = 18.0
 
 [sub_resource type="Animation" id="Animation_0x4m8"]
 resource_name = "Extend"

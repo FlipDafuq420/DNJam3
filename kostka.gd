@@ -22,9 +22,8 @@ func _process(delta):
 				play = false
 		#playsounds()
 		if start:
-			
 			await get_tree().create_timer(3).timeout
-			get_tree().change_scene_to_file("res://levels/poziom.tscn")
+			get_tree().change_scene_to_file("res://levels/learn ruchome.tscn")
 		else:
 			
 			await get_tree().create_timer(3).timeout

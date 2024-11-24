@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://c474lnid0jpna"]
 
 [ext_resource type="Script" path="res://objects/wtyczka.gd" id="1_d0bcw"]
-[ext_resource type="Texture2D" uid="uid://xuq6w34xuf36" path="res://Grafiki/Dziura1.png" id="2_qflnh"]
+[ext_resource type="Texture2D" uid="uid://cs3crf123r0rx" path="res://Grafiki/Dziura1.png" id="2_qflnh"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mjqf6"]
 size = Vector2(15, 32.6563)
