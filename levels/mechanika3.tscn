@@ -100,7 +100,7 @@ sources/0 = SubResource("TileSetAtlasSource_xmoui")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8fc75"]
 
-[node name="Main" type="Node2D" node_paths=PackedStringArray("movableNodes")]
+[node name="Main2" type="Node2D" node_paths=PackedStringArray("movableNodes")]
 script = ExtResource("1_jf76o")
 moving_mechanic = true
 movableNodes = [NodePath("Kolce/Kolce"), NodePath("Kolce/Kolce2"), NodePath("Kolce/Kolce3"), NodePath("Kolce/Kolce4"), NodePath("Kolce/Kolce5"), NodePath("Kolce/Kolce6"), NodePath("Kolce/Kolce7"), NodePath("Kolce/Kolce8"), NodePath("Kolce/Kolce9"), NodePath("Kolce/Kolce10"), NodePath("Kolce/Kolce11"), NodePath("Kolce/Kolce12"), NodePath("Kolce/Kolce13"), NodePath("Kolce/Kolce14"), NodePath("Kolce/Kolce15"), NodePath("Kolce/Kolce16"), NodePath("Kolce/Kolce17")]

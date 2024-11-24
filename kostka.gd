@@ -12,7 +12,7 @@ var play = true
 # Called when the node enters the scene tree for the first time.
 func playsounds():
 	$AudioStreamPlayer2D.play()
-func _process(delta):
+func _process(_delta):
 	
 	#print(play)
 	if not draggable  and is_inside_dropable:
@@ -47,7 +47,7 @@ func _process(delta):
 				else:
 					tween.tween_property(self,"global_position",initialPos,0.2).set_ease(Tween.EASE_OUT)	
 
-func _on_area_2d_mouse_shape_entered(shape_idx: int) -> void:
+func _on_area_2d_mouse_shape_entered(_shape_idx: int) -> void:
 	if mayI:
 		if not global.is_dragging:
 			draggable = true
@@ -55,7 +55,7 @@ func _on_area_2d_mouse_shape_entered(shape_idx: int) -> void:
 	# Replace with function body.
 
 
-func _on_area_2d_mouse_shape_exited(shape_idx: int) -> void:
+func _on_area_2d_mouse_shape_exited(_shape_idx: int) -> void:
 	if mayI:
 		if not global.is_dragging:
 			draggable = false
@@ -64,7 +64,7 @@ func _on_area_2d_mouse_shape_exited(shape_idx: int) -> void:
 		 # Replace with function body.
 
 
-func _on_area_2d_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
+func _on_area_2d_body_shape_entered(_body_rid: RID, body: Node2D, _body_shape_index: int, _local_shape_index: int) -> void:
 	if mayI:
 		if body.is_in_group('dropable'):
 			is_inside_dropable = true
@@ -78,7 +78,7 @@ func _on_area_2d_body_shape_entered(body_rid: RID, body: Node2D, body_shape_inde
 			#get_tree().quit()
 		
 
-func _on_area_2d_body_shape_exited(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
+func _on_area_2d_body_shape_exited(_body_rid: RID, body: Node2D, _body_shape_index: int, _local_shape_index: int) -> void:
 	if mayI:
 		if body.is_in_group('dropable'):
 			is_inside_dropable = false

@@ -450,7 +450,7 @@ sources/2 = SubResource("TileSetAtlasSource_7vx73")
 sources/3 = SubResource("TileSetAtlasSource_wnk13")
 sources/4 = SubResource("TileSetAtlasSource_w5khf")
 
-[node name="Main" type="Node2D"]
+[node name="Main2" type="Node2D"]
 script = ExtResource("1_shkfm")
 
 [node name="Start1" type="Sprite2D" parent="."]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=4 uid="uid://bmcmiduo4bhf0"]
+[gd_scene load_steps=29 format=4 uid="uid://bmcmiduo4bhf0"]
 
 [ext_resource type="Script" path="res://levels/level.gd" id="1_0xf8a"]
 [ext_resource type="PackedScene" uid="uid://dpcmpwxkcu8gl" path="res://objects/kolce.tscn" id="2_2sp6c"]
@@ -16,6 +16,7 @@
 [ext_resource type="Script" path="res://levels/death.gd" id="9_76x43"]
 [ext_resource type="Texture2D" uid="uid://dh7jmvfbw7kxl" path="res://textures/nocblok.png" id="10_8prvr"]
 [ext_resource type="Texture2D" uid="uid://bhqtyfk64c6tj" path="res://textures/dzienblock.png" id="11_uer7k"]
+[ext_resource type="Texture2D" uid="uid://cfnbjvm4c1dn8" path="res://textures/temp/terrain/blok.png" id="17_r4r6d"]
 
 [sub_resource type="Curve2D" id="Curve2D_m5gwo"]
 _data = {
@@ -189,12 +190,19 @@ position = Vector2(260, 360)
 shape = SubResource("WorldBoundaryShape2D_8fc75")
 
 [node name="Noc" type="Node2D" parent="."]
+visible = false
 
 [node name="NocTiles" type="TileMap" parent="Noc"]
 tile_set = SubResource("TileSet_7hd2p")
 rendering_quadrant_size = 20
 format = 2
 layer_0/tile_data = PackedInt32Array(917523, 0, 0, 917522, 0, 0, 851991, 0, 0, 786456, 0, 0, 589836, 0, 0, 589835, 0, 0, 524298, 0, 0, 720915, 0, 0, 720914, 0, 0, 655375, 0, 0, 458759, 0, 0, 458758, 0, 0, 458757, 0, 0)
+
+[node name="Blok" type="Sprite2D" parent="Noc"]
+modulate = Color(1, 1, 1, 0.568627)
+position = Vector2(270, 180)
+scale = Vector2(27, 18)
+texture = ExtResource("17_r4r6d")
 
 [node name="Dzien" type="Node2D" parent="."]
 

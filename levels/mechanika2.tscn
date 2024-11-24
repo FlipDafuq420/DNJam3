@@ -119,7 +119,7 @@ physics_layer_0/collision_layer = 512
 physics_layer_0/collision_mask = 512
 sources/0 = SubResource("TileSetAtlasSource_0xpm3")
 
-[node name="Main" type="Node2D"]
+[node name="Main2" type="Node2D"]
 script = ExtResource("1_pi61h")
 daytime_mechanic = true
 
