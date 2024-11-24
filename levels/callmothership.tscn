@@ -1,0 +1,178 @@
+[gd_scene load_steps=26 format=4 uid="uid://bsoa1237xid3a"]
+
+[ext_resource type="Script" path="res://levels/level.gd" id="1_bipag"]
+[ext_resource type="Texture2D" uid="uid://jmmxri2migyr" path="res://textures/bg/bgd2.png" id="2_j427k"]
+[ext_resource type="PackedScene" uid="uid://cc2yqfumenit7" path="res://objects/zmiana_poziomu.tscn" id="3_k0lp6"]
+[ext_resource type="Texture2D" uid="uid://cs3crf123r0rx" path="res://Grafiki/Dziura1.png" id="4_wtmax"]
+[ext_resource type="Texture2D" uid="uid://cowaualn750pt" path="res://textures/temp/tablets/no_front.png" id="5_g24dg"]
+[ext_resource type="PackedScene" uid="uid://c474lnid0jpna" path="res://objects/Wtyczka.tscn" id="6_vub8e"]
+[ext_resource type="PackedScene" uid="uid://l4h3h4127kh8" path="res://objects/StartPoint.tscn" id="7_4uopi"]
+[ext_resource type="PackedScene" uid="uid://dtkly4ehyjfiq" path="res://objects/tabliczka.tscn" id="8_f8bwb"]
+[ext_resource type="PackedScene" uid="uid://418nh7pidq8k" path="res://objects/player.tscn" id="9_813jm"]
+[ext_resource type="Texture2D" uid="uid://xf5f82j4iooh" path="res://Grafiki/Bloki/Piaskowiec1.png" id="10_1825s"]
+[ext_resource type="Texture2D" uid="uid://o331xqy8751c" path="res://Grafiki/Bloki/Piasek.png" id="11_b20j2"]
+[ext_resource type="Script" path="res://levels/death.gd" id="12_q6mrg"]
+[ext_resource type="Texture2D" uid="uid://dh7jmvfbw7kxl" path="res://textures/nocblok.png" id="13_w0fen"]
+[ext_resource type="Texture2D" uid="uid://bhqtyfk64c6tj" path="res://textures/dzienblock.png" id="14_iw7lr"]
+[ext_resource type="Texture2D" uid="uid://cfnbjvm4c1dn8" path="res://textures/temp/terrain/blok.png" id="15_vljp6"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5lbws"]
+texture = ExtResource("10_1825s")
+texture_region_size = Vector2i(20, 20)
+0:0/0 = 0
+1:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jfwoa"]
+texture = ExtResource("11_b20j2")
+texture_region_size = Vector2i(20, 20)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_3uqmv"]
+tile_size = Vector2i(20, 20)
+sources/0 = SubResource("TileSetAtlasSource_5lbws")
+sources/1 = SubResource("TileSetAtlasSource_jfwoa")
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8fc75"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_chutj"]
+texture = ExtResource("13_w0fen")
+texture_region_size = Vector2i(20, 20)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_wtlmv"]
+texture = ExtResource("14_iw7lr")
+texture_region_size = Vector2i(20, 20)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+
+[sub_resource type="TileSet" id="TileSet_7hd2p"]
+tile_size = Vector2i(20, 20)
+physics_layer_0/collision_layer = 512
+physics_layer_0/collision_mask = 512
+sources/1 = SubResource("TileSetAtlasSource_wtlmv")
+sources/0 = SubResource("TileSetAtlasSource_chutj")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qbe8a"]
+texture = ExtResource("13_w0fen")
+texture_region_size = Vector2i(20, 20)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h1h15"]
+texture = ExtResource("14_iw7lr")
+texture_region_size = Vector2i(20, 20)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
+
+[sub_resource type="TileSet" id="TileSet_0tvss"]
+tile_size = Vector2i(20, 20)
+physics_layer_0/collision_layer = 256
+physics_layer_0/collision_mask = 256
+sources/1 = SubResource("TileSetAtlasSource_h1h15")
+sources/0 = SubResource("TileSetAtlasSource_qbe8a")
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_bipag")
+daytime_mechanic = true
+
+[node name="Bgd2" type="Sprite2D" parent="."]
+position = Vector2(271, 180)
+texture = ExtResource("2_j427k")
+
+[node name="Zmiana poziomu" parent="." instance=ExtResource("3_k0lp6")]
+position = Vector2(70, 100)
+next_level = "res://levels/learn ruchome.tscn"
+
+[node name="Dziura1" type="Sprite2D" parent="."]
+modulate = Color(0.737255, 0.501961, 0.419608, 1)
+position = Vector2(304, 250)
+texture = ExtResource("4_wtmax")
+
+[node name="NoFront" type="Sprite2D" parent="Dziura1"]
+texture = ExtResource("5_g24dg")
+
+[node name="Wtyczka" parent="." instance=ExtResource("6_vub8e")]
+position = Vector2(322, 250)
+
+[node name="StartPoint" parent="." instance=ExtResource("7_4uopi")]
+position = Vector2(280, 260)
+
+[node name="Tabliczka" parent="." instance=ExtResource("8_f8bwb")]
+position = Vector2(61, 272)
+tablet_type = "slonce"
+
+[node name="Player" parent="." instance=ExtResource("9_813jm")]
+unique_name_in_owner = true
+position = Vector2(11, -15)
+collision_mask = 167
+
+[node name="Level" type="TileMap" parent="."]
+rendering_quadrant_size = 20
+format = 2
+
+[node name="Piaskowiec" type="TileMapLayer" parent="Level"]
+tile_map_data = PackedByteArray("AAAEAAYAAAACAAAAAAADAAYAAAABAAAAAAACAAYAAAABAAAAAAAEAAcAAAACAAIAAAADAAcAAAABAAIAAAACAAcAAAABAAIAAAABAAgAAAACAAEAAAABAAkAAAACAAEAAAABAAoAAAACAAEAAAABAAsAAAACAAEAAAABAAwAAAACAAEAAAABAA0AAAACAAEAAAACAA4AAAABAAAAAAADAA4AAAABAAAAAAAEAA4AAAABAAAAAAAFAA4AAAACAAAAAAAFAA8AAAACAAEAAAAFABAAAAACAAEAAAAFABEAAAACAAEAAAABAAUAAAACAAEAAAABAAQAAAACAAEAAAABAAMAAAACAAEAAAABAAIAAAACAAEAAAACAAEAAAABAAIAAAADAAEAAAABAAIAAAAEAAEAAAABAAIAAAAFAAEAAAABAAIAAAAGAAEAAAABAAIAAAAHAAEAAAABAAIAAAAIAAEAAAABAAIAAAAJAAEAAAABAAIAAAAKAAEAAAABAAIAAAALAAEAAAABAAIAAAAMAAEAAAABAAIAAAANAAEAAAABAAIAAAAOAAEAAAABAAIAAAAPAAEAAAABAAIAAAAQAAEAAAABAAIAAAARAAEAAAABAAIAAAASAAEAAAABAAIAAAASAAAAAAABAAEAAAATAAAAAAABAAEAAAAUAAAAAAABAAEAAAAVAAAAAAABAAEAAAATAAEAAAABAAIAAAAUAAEAAAABAAIAAAAVAAEAAAABAAIAAAAWAAEAAAABAAIAAAAXAAEAAAABAAIAAAAYAAEAAAABAAIAAAAZAAIAAAAAAAEAAAAZAAMAAAAAAAEAAAAZAAQAAAAAAAEAAAAZAAUAAAAAAAEAAAAZAAYAAAAAAAEAAAAZAAcAAAAAAAEAAAAZAAgAAAAAAAEAAAAZAAkAAAAAAAEAAAAZAAoAAAAAAAEAAAAZAAsAAAAAAAEAAAAZAAwAAAAAAAEAAAAZAA0AAAAAAAEAAAAZAA4AAAABAAEAAAAZAA8AAAABAAEAAAAZABAAAAABAAEAAAAZABEAAAABAAEAAAAWAA8AAAAAAAEAAAAWABAAAAAAAAEAAAAWABEAAAAAAAEAAAAWAA4AAAAAAAAAAAAXAA4AAAABAAAAAAAYAA4AAAABAAAAAAAXAA8AAAABAAEAAAAYAA8AAAABAAEAAAAYABAAAAABAAEAAAAYABEAAAABAAEAAAAXABAAAAABAAEAAAAXABEAAAABAAEAAAAaAA8AAAABAAEAAAAaABAAAAABAAEAAAAaABEAAAABAAEAAAAaAA4AAAABAAEAAAAaAA0AAAABAAEAAAAaAAwAAAABAAEAAAAaAAsAAAABAAEAAAAaAAgAAAABAAEAAAAaAAkAAAABAAEAAAAaAAoAAAABAAEAAAAaAAcAAAABAAEAAAAaAAYAAAABAAEAAAAaAAUAAAABAAEAAAAaAAQAAAABAAEAAAAaAAMAAAABAAEAAAAaAAIAAAABAAEAAAAaAAEAAAABAAEAAAAaAAAAAAABAAEAAAAZAAAAAAABAAEAAAAZAAEAAAABAAEAAAAYAAAAAAABAAEAAAAXAAAAAAABAAEAAAAWAAAAAAABAAEAAAARAAAAAAABAAEAAAAQAAAAAAABAAEAAAAPAAAAAAABAAEAAAAOAAAAAAABAAEAAAANAAAAAAABAAEAAAAMAAAAAAABAAEAAAALAAAAAAABAAEAAAAKAAAAAAABAAEAAAAJAAAAAAABAAEAAAAIAAAAAAABAAEAAAAHAAAAAAABAAEAAAAGAAAAAAABAAEAAAAFAAAAAAABAAEAAAAEAAAAAAABAAEAAAADAAAAAAABAAEAAAACAAAAAAABAAEAAAABAAAAAAABAAEAAAAAAAAAAAABAAEAAAAAAAEAAAABAAEAAAABAAEAAAABAAEAAAAAAAIAAAABAAEAAAAAAAMAAAABAAEAAAAAAAQAAAABAAEAAAAAAAUAAAABAAEAAAAAAAYAAAABAAEAAAAAAAcAAAABAAEAAAABAAcAAAABAAEAAAABAAYAAAABAAEAAAAAAAgAAAABAAEAAAAAAAkAAAABAAEAAAAAAAoAAAABAAEAAAAAAAsAAAABAAEAAAAAAAwAAAABAAEAAAAAAA0AAAABAAEAAAAAAA4AAAABAAEAAAABAA4AAAABAAEAAAAAAA8AAAABAAEAAAABAA8AAAABAAEAAAACAA8AAAABAAEAAAADAA8AAAABAAEAAAAEAA8AAAABAAEAAAAEABAAAAABAAEAAAADABAAAAABAAEAAAACABAAAAABAAEAAAABABAAAAABAAEAAAAAABAAAAABAAEAAAAAABEAAAABAAEAAAABABEAAAABAAEAAAACABEAAAABAAEAAAADABEAAAABAAEAAAAEABEAAAABAAEAAAANAA4AAAAAAAMAAAAOAA4AAAABAAMAAAAPAA4AAAACAAMAAAA=")
+tile_set = SubResource("TileSet_3uqmv")
+rendering_quadrant_size = 20
+
+[node name="death" type="Area2D" parent="."]
+script = ExtResource("12_q6mrg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="death"]
+position = Vector2(260, 360)
+shape = SubResource("WorldBoundaryShape2D_8fc75")
+
+[node name="Noc" type="Node2D" parent="."]
+visible = false
+
+[node name="NocTiles" type="TileMap" parent="Noc"]
+tile_set = SubResource("TileSet_7hd2p")
+rendering_quadrant_size = 20
+format = 2
+layer_0/tile_data = PackedInt32Array(917523, 0, 0, 917522, 0, 0, 851991, 0, 0, 786456, 0, 0, 589836, 0, 0, 589835, 0, 0, 524298, 0, 0, 720915, 0, 0, 720914, 0, 0, 655375, 0, 0, 458759, 0, 0, 458758, 0, 0, 458757, 0, 0)
+
+[node name="Blok" type="Sprite2D" parent="Noc"]
+modulate = Color(1, 1, 1, 0.568627)
+position = Vector2(270, 180)
+scale = Vector2(27, 18)
+texture = ExtResource("15_vljp6")
+
+[node name="Dzien" type="Node2D" parent="."]
+
+[node name="DzienTiles" type="TileMap" parent="Dzien"]
+tile_set = SubResource("TileSet_0tvss")
+rendering_quadrant_size = 20
+format = 2
+layer_0/tile_data = PackedInt32Array(917514, 1, 0, 917513, 1, 0, 917512, 1, 0)
+
+[connection signal="body_entered" from="death" to="death" method="_on_body_entered"]
