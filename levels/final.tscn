@@ -146,7 +146,7 @@ rotates = false
 loop = false
 
 [node name="Zmiana poziomu" parent="Path2D/PathFollow2D" instance=ExtResource("3_5gvua")]
-next_level = "res://levels/learn ruchome.tscn"
+next_level = "res://levels/ending.tscn"
 
 [node name="StartPoint" parent="." instance=ExtResource("7_ej8av")]
 position = Vector2(70, 260)
