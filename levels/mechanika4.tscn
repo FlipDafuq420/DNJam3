@@ -137,7 +137,7 @@ script = ExtResource("1_0xf8a")
 daytime_mechanic = true
 
 [node name="Bgd2" type="Sprite2D" parent="."]
-position = Vector2(271, 180)
+position = Vector2(270, 180)
 texture = ExtResource("2_syb73")
 
 [node name="Zmiana poziomu" parent="." instance=ExtResource("3_tai3j")]

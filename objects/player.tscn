@@ -3,8 +3,8 @@
 [ext_resource type="Script" path="res://objects/player.gd" id="1_al6bl"]
 [ext_resource type="SpriteFrames" uid="uid://deuve1itsup8g" path="res://textures/temp/Main_Character/Walking.tres" id="1_clf27"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_5u7fg"]
-size = Vector2(20, 30)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tcmmn"]
+radius = 11.0
 
 [node name="Player" type="CharacterBody2D"]
 collision_layer = 167
@@ -12,11 +12,9 @@ collision_mask = 135
 script = ExtResource("1_al6bl")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 0)
-shape = SubResource("RectangleShape2D_5u7fg")
+shape = SubResource("CapsuleShape2D_tcmmn")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(-1, 0)
 sprite_frames = ExtResource("1_clf27")
 animation = &"Walk_Right"
 autoplay = "default"

@@ -1,16 +1,24 @@
-[gd_scene load_steps=14 format=3 uid="uid://dtkly4ehyjfiq"]
+[gd_scene load_steps=22 format=3 uid="uid://dtkly4ehyjfiq"]
 
 [ext_resource type="Texture2D" uid="uid://wsbgyneaun5k" path="res://textures/ufolud/ufolud.jpg" id="1_fpcio"]
 [ext_resource type="Script" path="res://objects/tabliczka.gd" id="1_qfwwy"]
+[ext_resource type="Texture2D" uid="uid://ca2eb058f2r0b" path="res://textures/temp/tablets/Tabliczka dzwon.png" id="2_1kslp"]
 [ext_resource type="Texture2D" uid="uid://cowaualn750pt" path="res://textures/temp/tablets/no_front.png" id="3_1jrnm"]
 [ext_resource type="Texture2D" uid="uid://c6ohtxd66pd8r" path="res://Grafiki/Obiekty/Tabliczka Nie1.png" id="3_bcdjw"]
+[ext_resource type="Texture2D" uid="uid://caj3rci5ff76j" path="res://textures/temp/tablets/Tabliczka dzwon2.png" id="3_oeenx"]
 [ext_resource type="Texture2D" uid="uid://c5ped7mx6g63h" path="res://textures/temp/tablets/ship_front.png" id="4_12gj0"]
 [ext_resource type="Texture2D" uid="uid://cxwuqkdnsbuis" path="res://Grafiki/Obiekty/Tabliczka Nie2.png" id="4_cguji"]
 [ext_resource type="Texture2D" uid="uid://dv36a3n6nu4mc" path="res://textures/temp/tablets/sun_front.png" id="5_prq1t"]
 [ext_resource type="Texture2D" uid="uid://07c3526pndx8" path="res://Grafiki/Obiekty/Tabliczka Ruchu1.png" id="5_so1d8"]
+[ext_resource type="Texture2D" uid="uid://dpxi0b3wadsks" path="res://textures/temp/tablets/call_front.png" id="5_wvc7p"]
 [ext_resource type="Texture2D" uid="uid://cqira37togass" path="res://Grafiki/Obiekty/Tabliczka Ruchu2.png" id="6_7dc5h"]
+[ext_resource type="Texture2D" uid="uid://6nm0f00ui85q" path="res://textures/temp/tablets/mother_front.png" id="6_yrhq6"]
 [ext_resource type="Texture2D" uid="uid://dl41js343qowj" path="res://Grafiki/Obiekty/Tabliczka Słońca1.png" id="7_yn5i8"]
 [ext_resource type="Texture2D" uid="uid://q63labqxt0d0" path="res://Grafiki/Obiekty/Tabliczka Słońca2.png" id="8_7swac"]
+[ext_resource type="Texture2D" uid="uid://5fjcmd3d2wq3" path="res://textures/temp/tablets/Tabliczka matka.png" id="10_uwqgy"]
+[ext_resource type="Texture2D" uid="uid://cq7ftl15vk25q" path="res://textures/temp/tablets/Tabliczka matka2.png" id="11_8pigi"]
+[ext_resource type="Texture2D" uid="uid://nr3nacwidhq8" path="res://textures/temp/tablets/Tabliczka statek1.png" id="16_oj7ca"]
+[ext_resource type="Texture2D" uid="uid://dkwp2poaddloq" path="res://textures/temp/tablets/Tabliczka statek2.png" id="17_44wa1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ayqi7"]
 size = Vector2(15, 15)
@@ -19,10 +27,37 @@ size = Vector2(15, 15)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("2_1kslp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_oeenx")
+}],
+"loop": true,
+"name": &"call",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("1_fpcio")
 }],
 "loop": true,
 "name": &"default",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_wvc7p")
+}],
+"loop": true,
+"name": &"in_call",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("6_yrhq6")
+}],
+"loop": true,
+"name": &"in_mother",
 "speed": 5.0
 }, {
 "frames": [{
@@ -43,10 +78,29 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("4_12gj0")
+}],
+"loop": true,
+"name": &"in_ship",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("5_prq1t")
 }],
 "loop": true,
 "name": &"in_slonce",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_uwqgy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_8pigi")
+}],
+"loop": true,
+"name": &"mother",
 "speed": 5.0
 }, {
 "frames": [{
@@ -73,6 +127,17 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
+"texture": ExtResource("16_oj7ca")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_44wa1")
+}],
+"loop": true,
+"name": &"ship",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": ExtResource("7_yn5i8")
 }, {
 "duration": 1.0,
@@ -93,7 +158,7 @@ shape = SubResource("RectangleShape2D_ayqi7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_cq1vp")
-animation = &"slonce"
+animation = &"ship"
 autoplay = "default"
 
 [node name="Area2D" type="Area2D" parent="."]
