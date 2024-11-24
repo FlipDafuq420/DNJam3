@@ -97,3 +97,4 @@ texture = ExtResource("8_6eurh")
 [node name="menutheme" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("6_0pxqf")
 autoplay = true
+parameters/looping = true

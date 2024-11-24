@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=4 uid="uid://dul4gbuup5fds"]
+[gd_scene load_steps=27 format=4 uid="uid://dul4gbuup5fds"]
 
 [ext_resource type="Script" path="res://levels/level.gd" id="1_533ql"]
 [ext_resource type="Texture2D" uid="uid://jmmxri2migyr" path="res://textures/bg/bgd2.png" id="2_05xwr"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://dh7jmvfbw7kxl" path="res://textures/nocblok.png" id="13_341ce"]
 [ext_resource type="Texture2D" uid="uid://bhqtyfk64c6tj" path="res://textures/dzienblock.png" id="14_33eoo"]
 [ext_resource type="Texture2D" uid="uid://cfnbjvm4c1dn8" path="res://textures/temp/terrain/blok.png" id="15_36fuv"]
+[ext_resource type="AudioStream" uid="uid://ya5bhqqfp2gx" path="res://sounds/Those who were here before us.mp3" id="15_pe47y"]
 
 [sub_resource type="Curve2D" id="Curve2D_faoy8"]
 _data = {
@@ -219,5 +220,10 @@ texture = ExtResource("15_36fuv")
 tile_set = SubResource("TileSet_0tvss")
 rendering_quadrant_size = 20
 format = 2
+
+[node name="gametheme" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("15_pe47y")
+autoplay = true
+parameters/looping = true
 
 [connection signal="body_entered" from="death" to="death" method="_on_body_entered"]

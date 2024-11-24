@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://cvydh4s1m10h3"]
+[gd_scene load_steps=16 format=4 uid="uid://cvydh4s1m10h3"]
 
 [ext_resource type="Script" path="res://levels/level.gd" id="1_mdc5e"]
 [ext_resource type="PackedScene" uid="uid://cc2yqfumenit7" path="res://objects/zmiana_poziomu.tscn" id="2_6853h"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://o331xqy8751c" path="res://Grafiki/Bloki/Piasek.png" id="6_5jeo7"]
 [ext_resource type="PackedScene" uid="uid://dtkly4ehyjfiq" path="res://objects/tabliczka.tscn" id="7_dyjjw"]
 [ext_resource type="Script" path="res://levels/death.gd" id="8_0aqgk"]
+[ext_resource type="AudioStream" uid="uid://dek2n44gikr2h" path="res://sounds/menutheme.mp3" id="9_uxmba"]
 
 [sub_resource type="Curve2D" id="Curve2D_m5gwo"]
 _data = {
@@ -142,5 +143,10 @@ script = ExtResource("8_0aqgk")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="death"]
 position = Vector2(260, 360)
 shape = SubResource("WorldBoundaryShape2D_8fc75")
+
+[node name="gametheme" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_uxmba")
+autoplay = true
+parameters/looping = true
 
 [connection signal="body_entered" from="death" to="death" method="_on_body_entered"]

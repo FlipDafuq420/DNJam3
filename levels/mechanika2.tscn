@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://clcyddtetbbmg"]
+[gd_scene load_steps=25 format=4 uid="uid://clcyddtetbbmg"]
 
 [ext_resource type="Script" path="res://levels/level.gd" id="1_pi61h"]
 [ext_resource type="PackedScene" uid="uid://dpcmpwxkcu8gl" path="res://objects/kolce.tscn" id="2_cfdd4"]
@@ -16,6 +16,7 @@
 [ext_resource type="Script" path="res://levels/death.gd" id="9_f0wpf"]
 [ext_resource type="Texture2D" uid="uid://dh7jmvfbw7kxl" path="res://textures/nocblok.png" id="10_5n7tr"]
 [ext_resource type="Texture2D" uid="uid://cfnbjvm4c1dn8" path="res://textures/temp/terrain/blok.png" id="14_3jdlg"]
+[ext_resource type="AudioStream" uid="uid://ya5bhqqfp2gx" path="res://sounds/Those who were here before us.mp3" id="17_jaq6d"]
 
 [sub_resource type="Curve2D" id="Curve2D_m5gwo"]
 _data = {
@@ -95,7 +96,8 @@ texture_region_size = Vector2i(20, 20)
 
 [sub_resource type="TileSet" id="TileSet_vjdxr"]
 tile_size = Vector2i(20, 20)
-physics_layer_0/collision_layer = 1
+physics_layer_0/collision_layer = 9
+physics_layer_0/collision_mask = 9
 sources/0 = SubResource("TileSetAtlasSource_dbsio")
 sources/1 = SubResource("TileSetAtlasSource_w13ph")
 
@@ -114,7 +116,6 @@ physics_layer_0/collision_mask = 512
 sources/0 = SubResource("TileSetAtlasSource_0xpm3")
 
 [node name="Main2" type="Node2D"]
-position = Vector2(0, 20)
 script = ExtResource("1_pi61h")
 daytime_mechanic = true
 
@@ -190,5 +191,10 @@ scale = Vector2(27, 18)
 texture = ExtResource("14_3jdlg")
 
 [node name="Dzien" type="Node2D" parent="."]
+
+[node name="gametheme" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("17_jaq6d")
+autoplay = true
+parameters/looping = true
 
 [connection signal="body_entered" from="death" to="death" method="_on_body_entered"]

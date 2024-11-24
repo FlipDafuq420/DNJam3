@@ -5,9 +5,9 @@
 
 [sub_resource type="Curve2D" id="Curve2D_olbrk"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, -7, 0, 0, 0, 0, 0, -15)
+"points": PackedVector2Array(0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, -13)
 }
-point_count = 3
+point_count = 2
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6rgwe"]
 radius = 8.0
