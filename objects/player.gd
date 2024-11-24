@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var speed = 100
 @export var gravity = 200
-@export var jump_power = -100
+@export var jump_power = -120
 var game_over = false
 var face = "default"
 var moving = false

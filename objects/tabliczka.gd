@@ -36,7 +36,7 @@ func _physics_process(delta: float) -> void:
 		move_and_collide(velocity * delta)
 
 		
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if locked:
 		var locked_position = locked_source.get_node("HoldPoint").global_position
 		position = locked_position
@@ -47,6 +47,6 @@ func _on_area_2d_body_entered(body: Node2D) -> void:
 		reachable = true
 
 
-func _on_area_2d_body_exited(body: Node2D) -> void:
+func _on_area_2d_body_exited(_body: Node2D) -> void:
 	interact_source = null
 	reachable = false

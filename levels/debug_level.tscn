@@ -1,8 +1,8 @@
 [gd_scene load_steps=36 format=4 uid="uid://b67wsv8dhn334"]
 
-[ext_resource type="Script" path="res://levels/debug_level.gd" id="1_shkfm"]
+[ext_resource type="Script" path="res://levels/level.gd" id="1_shkfm"]
 [ext_resource type="PackedScene" uid="uid://cc2yqfumenit7" path="res://objects/zmiana_poziomu.tscn" id="2_51upq"]
-[ext_resource type="Texture2D" uid="uid://dmgugiw37wtp8" path="res://Grafiki/Start1.png" id="2_lf1kq"]
+[ext_resource type="Texture2D" uid="uid://c542rp5dc3lem" path="res://Grafiki/Start1.png" id="2_lf1kq"]
 [ext_resource type="PackedScene" uid="uid://418nh7pidq8k" path="res://objects/player.tscn" id="3_eqm3r"]
 [ext_resource type="PackedScene" uid="uid://dpcmpwxkcu8gl" path="res://objects/kolce.tscn" id="4_1w1if"]
 [ext_resource type="PackedScene" uid="uid://tg5b081yo42x" path="res://objects/platforma.tscn" id="5_sgrvb"]
@@ -463,6 +463,8 @@ next_level = "res://levels/poziom.tscn"
 
 [node name="Wtyczka" parent="." instance=ExtResource("11_24fh0")]
 position = Vector2(260, 140)
+collision_layer = 16
+collision_mask = 16
 
 [node name="Tabliczka" parent="." instance=ExtResource("8_trfbn")]
 position = Vector2(462, 254)
@@ -471,6 +473,7 @@ tablet_type = "slonce"
 [node name="Player" parent="." instance=ExtResource("3_eqm3r")]
 unique_name_in_owner = true
 position = Vector2(142, 265)
+collision_layer = 135
 
 [node name="death" type="Area2D" parent="."]
 script = ExtResource("9_8n24c")
@@ -535,7 +538,7 @@ tile_set = SubResource("TileSet_xdxbr")
 rendering_quadrant_size = 20
 
 [node name="Sprite2D" type="Sprite2D" parent="Noc"]
-modulate = Color(1, 1, 1, 0.572549)
+modulate = Color(1, 1, 1, 0.568627)
 position = Vector2(270, 180)
 scale = Vector2(27, 18)
 texture = ExtResource("15_8rqdf")

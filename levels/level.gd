@@ -2,13 +2,18 @@ extends Node2D
 
 var daytime = "day"
 @onready var player = $Player
+@export var daytime_mechanic = false
+@export var moving_mechanic = false
+@export var movableNodes: Array[Node2D] = []
 
-# Called when the node enters the scene tree for the first time.
+## Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	change_time()
+	player.position = $StartPoint.get_node("pos").global_position
+	if daytime_mechanic:
+		change_time()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	if $Player.game_over:
 		get_tree().reload_current_scene()
 		
@@ -27,3 +32,7 @@ func change_time():
 		player.set_collision_mask_value(10, true)
 		player.set_collision_layer_value(9, false)
 		player.set_collision_mask_value(9, false)
+		
+func toggle_moving(state: bool):
+	for movable in movableNodes:
+		movable.stop = state

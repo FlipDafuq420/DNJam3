@@ -1,6 +1,6 @@
-[gd_scene load_steps=15 format=4 uid="uid://b5sbigrjrmrl4"]
+[gd_scene load_steps=15 format=4 uid="uid://bgfxo55foign6"]
 
-[ext_resource type="Script" path="res://levels/debug_level.gd" id="1_b1sxx"]
+[ext_resource type="Script" path="res://levels/level.gd" id="1_b1sxx"]
 [ext_resource type="PackedScene" uid="uid://cc2yqfumenit7" path="res://objects/zmiana_poziomu.tscn" id="2_jyxr2"]
 [ext_resource type="PackedScene" uid="uid://418nh7pidq8k" path="res://objects/player.tscn" id="3_5dj4p"]
 [ext_resource type="PackedScene" uid="uid://tg5b081yo42x" path="res://objects/platforma.tscn" id="5_tuimb"]

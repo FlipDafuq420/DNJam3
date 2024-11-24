@@ -8,6 +8,4 @@ func _ready() -> void:
 
 
 func _on_body_entered(_body: Node2D) -> void:
-	print_debug("Zmiana")
-	print_debug(next_level)
-	get_tree().change_scene_to_file(next_level)
+	get_tree().call_deferred("change_scene_to_file", next_level)
