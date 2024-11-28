@@ -12,8 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://o331xqy8751c" path="res://Grafiki/Bloki/Piasek.png" id="7_r0t7e"]
 [ext_resource type="PackedScene" uid="uid://dtkly4ehyjfiq" path="res://objects/tabliczka.tscn" id="8_b3o12"]
 [ext_resource type="Script" path="res://levels/death.gd" id="9_76x43"]
-[ext_resource type="Texture2D" uid="uid://dh7jmvfbw7kxl" path="res://textures/nocblok.png" id="10_8prvr"]
 [ext_resource type="Texture2D" uid="uid://bhqtyfk64c6tj" path="res://textures/dzienblock.png" id="11_uer7k"]
+[ext_resource type="Texture2D" uid="uid://bl7c2apu8mo2v" path="res://textures/nocblock.png" id="16_qym5s"]
 [ext_resource type="AudioStream" uid="uid://ya5bhqqfp2gx" path="res://sounds/Those who were here before us.mp3" id="16_tr0r0"]
 [ext_resource type="Texture2D" uid="uid://cfnbjvm4c1dn8" path="res://textures/temp/terrain/blok.png" id="17_r4r6d"]
 
@@ -97,7 +97,7 @@ sources/1 = SubResource("TileSetAtlasSource_jfwoa")
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8fc75"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_chutj"]
-texture = ExtResource("10_8prvr")
+texture = ExtResource("16_qym5s")
 texture_region_size = Vector2i(20, 20)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
@@ -116,7 +116,7 @@ sources/1 = SubResource("TileSetAtlasSource_wtlmv")
 sources/0 = SubResource("TileSetAtlasSource_chutj")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qbe8a"]
-texture = ExtResource("10_8prvr")
+texture = ExtResource("16_qym5s")
 texture_region_size = Vector2i(20, 20)
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-10, -10, 10, -10, 10, 10, -10, 10)
@@ -186,7 +186,6 @@ position = Vector2(260, 360)
 shape = SubResource("WorldBoundaryShape2D_8fc75")
 
 [node name="Noc" type="Node2D" parent="."]
-visible = false
 
 [node name="NocTiles" type="TileMap" parent="Noc"]
 tile_set = SubResource("TileSet_7hd2p")

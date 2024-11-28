@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dtkly4ehyjfiq"]
+[gd_scene load_steps=23 format=3 uid="uid://dtkly4ehyjfiq"]
 
 [ext_resource type="Texture2D" uid="uid://wsbgyneaun5k" path="res://textures/ufolud/ufolud.jpg" id="1_fpcio"]
 [ext_resource type="Script" path="res://objects/tabliczka.gd" id="1_qfwwy"]
@@ -15,6 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://6nm0f00ui85q" path="res://textures/temp/tablets/mother_front.png" id="6_yrhq6"]
 [ext_resource type="Texture2D" uid="uid://dl41js343qowj" path="res://Grafiki/Obiekty/Tabliczka Słońca1.png" id="7_yn5i8"]
 [ext_resource type="Texture2D" uid="uid://q63labqxt0d0" path="res://Grafiki/Obiekty/Tabliczka Słońca2.png" id="8_7swac"]
+[ext_resource type="Texture2D" uid="uid://d4nentwpoq1sk" path="res://textures/temp/tablets/go_front.png" id="8_ufpoj"]
 [ext_resource type="Texture2D" uid="uid://5fjcmd3d2wq3" path="res://textures/temp/tablets/Tabliczka matka.png" id="10_uwqgy"]
 [ext_resource type="Texture2D" uid="uid://cq7ftl15vk25q" path="res://textures/temp/tablets/Tabliczka matka2.png" id="11_8pigi"]
 [ext_resource type="Texture2D" uid="uid://nr3nacwidhq8" path="res://textures/temp/tablets/Tabliczka statek1.png" id="16_oj7ca"]
@@ -70,7 +71,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": ExtResource("4_12gj0")
+"texture": ExtResource("8_ufpoj")
 }],
 "loop": true,
 "name": &"in_ruch",
@@ -158,7 +159,7 @@ shape = SubResource("RectangleShape2D_ayqi7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_cq1vp")
-animation = &"in_ship"
+animation = &"in_ruch"
 autoplay = "default"
 
 [node name="Area2D" type="Area2D" parent="."]
